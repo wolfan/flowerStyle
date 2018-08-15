@@ -1,0 +1,36 @@
+// SCSS引导
+
+@import "valoro";
+@import "fx";
+// 颜色与尺寸
+@import "kaj";
+
+// HTML标签复键
+@import "fondo";
+// 排版部分（title,test,list）
+@import "tipoj";
+// 文本辅肋（字体默置与复置等）
+@import "fo";
+// 按钮
+@import "buton";
+// 表单（与input部分分隔）
+@import "formo";
+@import "input";
+// 媒体：图片、音频、视频
+@import "amas";
+@import "bildo";
+@import "audio";
+@import "video";
+
+// 布局
+@import "arango";
+
+// 基础组件
+
+// 图标
+@import "ikono";
+
+// 扩展功能
+
+// 特殊
+@import "spe";

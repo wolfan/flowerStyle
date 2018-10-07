@@ -1,0 +1,33 @@
+// 语言部分
+
+:lang(zh),
+:lang(zh-Hans),
+:lang(zh-cmn),
+:lang(zh-cmn-Hans){
+  font-family: $lang-hans;
+}
+
+:lang(zh-Hant),
+:lang(zh-cmn-Hant){
+  font-family: $lang-hant;
+}
+
+:lang(ja){
+  font-family: $lang-jp;
+}
+:lang(ko){
+  font-family: $lang-kr;
+}
+:lang(en){
+  font-family: $lang-en;
+}
+:lang(ru){
+  font-family: $lang-ru;
+}
+:lang(fr){
+  font-family: $lang-fr;
+}
+:lang(ar){
+  font-family: $lang-ar;
+}
+// <html lang="ar" dir="rtl">

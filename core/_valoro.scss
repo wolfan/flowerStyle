@@ -7,27 +7,77 @@ $xl: 1.8rem;
 $sl: 2.1rem;
 
 // screen size
+$sr-se: 320px;
+$sr-678: 375px;
+$sr-678p: 414px;
+$sr-x: $sr-678;
 $sr-ipad: 768px;
-$sr-ipse: 320px;
-$sr-ip6: 375px;
-$sr-ip6p: 414px;
-$sr-ipx:375px;
-$sr-ipad-pro: 1024px;
-$sr-800: 800px;
-$sr-1024: 1024px;
-$sr-full: 1920px;
+$sr-ipad: 1024px;
+$sr-web: 1296px;
+$sr-air: 1280px;
+$sr-hdtv: 1920px;
+$sr-max: $sr-hdtv;
 
 // font-size
+$h1: 2.1rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.2rem;
+$h5: .9rem;
+$h6: .6rem;
+$fz: $h5;
+$fz-big: $h4;
+// $fw: font-weight: 500;
+$font-size: $h5;
+
 // element-size
 // color
-$bg:;
+// https://www.zcool.com.cn/article/ZNzc2OTI4.html
+// apple-ui color.
+$red: #ff3b30;
+$orange: #ff9500;
+$yellow: #ffcc00;
+$green: #4cd964;
+$teal: #5ac8fa;
+$blue: #007aff;
+$purple: #5856d6;
+
+$pink: #ff3d55;
+
+$gray: rgba(4,4,15,.45);
+$black: #04040f;
+$white: #f9f9f9;
+
+// dark color.
+$dark-red: #c70851;
+$dark-yellow: #fdb933;
+$dark-blue: #2a5cca;
+$dark-blue-ii: #495a80;
+$dark-green: #008573;
+$dark-teal: #ddf0ed;
+$dark-purple: #6f599c;
+
+$dark-pink: #fdd3e1;
+
+$dark-black: #303030;
+$dark-gray: #e0e0e0;
+$dark-white: #f9f9f9;
+
+$count-color: #111111;
+
+// font
+// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+// https://picturepan2.github.io/spectre/
+$font-system: -apple-system, system-ui, BlinkMacSystemFont !default;
+$font-system-linux: Oxygen, Cantarell, Ubuntu !default; // KED,Gnome,Unity.
+$font-default: $font-system, 'Segoe UI', Roboto !default;
 
 // lang
-$lang-hans: -apple-system, system-ui!default;
-$lang-hant: -apple-system, system-ui!default;
-$lang-jp: -apple-system, system-ui!default;
-$lang-kr: -apple-system, system-ui!default;
-$lang-en: -apple-system, system-ui!default;
+$lang-hans: $font-default, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', KaiTi, SimKaiti !default;
+$lang-hant: $font-default, 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei', KaiTi !default;
+$lang-jp: $font-default, 'Hiragino Sans', 'Hiragino KaKu Gothic Pro', 'Yu Gothic', YuGothic, Meiryo !default;
+$lang-kr: $font-default, 'Malgun Gothic' !default;
+$lang-en: $font-default, 'Roboto Mono', Menlo, Courier, monospace !default;
 $lang-ru: $lang-en!default;
 $lang-fr: $lang-en!default;
 $lang-ar: $lang-en!default;

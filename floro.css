@@ -1,0 +1,74 @@
+body {
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 500;
+}
+
+h1, .h1 {
+  font-size: 2.1rem;
+}
+
+h2, .h2 {
+  font-size: 1.8rem;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+}
+
+h4, .h4 {
+  font-size: 1.2rem;
+}
+
+h5, .h5 {
+  font-size: 0.9rem;
+}
+
+h6, .h6 {
+  font-size: 0.6rem;
+}
+
+:lang(zh),
+:lang(zh-Hans),
+:lang(zh-cmn),
+:lang(zh-cmn-Hans) {
+  font-family: -apple-system, system-ui;
+}
+
+:lang(zh-Hant),
+:lang(zh-cmn-Hant) {
+  font-family: -apple-system, system-ui;
+}
+
+:lang(ja) {
+  font-family: -apple-system, system-ui;
+}
+
+:lang(ko) {
+  font-family: -apple-system, system-ui;
+}
+
+:lang(en) {
+  font-family: -apple-system, system-ui;
+}
+
+:lang(ru) {
+  font-family: -apple-system, system-ui;
+}
+
+:lang(fr) {
+  font-family: -apple-system, system-ui;
+}
+
+:lang(ar) {
+  font-family: -apple-system, system-ui;
+}
+
+/*# sourceMappingURL=floro.css.map */

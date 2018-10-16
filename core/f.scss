@@ -1,5 +1,24 @@
 // SCSS引导
 
+@import "restarigi";
+
 @import "valoro";
 @import "fn"; // 函数部分
 @import "lang"; // 语言
+
+@import "koloro";
+
+// 基础
+@import "table";
+@import "divider";  // 分隔线
+
+// 布局
+@import "arango";
+
+// 辅助
+@import "media";
+@import "tabs";
+
+// 图标
+@import "icon/valoro";
+@import "icon/ikono";

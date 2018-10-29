@@ -7,6 +7,7 @@ $xl: 1.8rem;
 $sl: 2.1rem;
 
 // screen size
+$sr-max: 480px;
 $sr-se: 320px;
 $sr-678: 375px;
 $sr-678p: 414px;
@@ -27,7 +28,6 @@ $h5: .9rem;
 $h6: .6rem;
 $fz: $h5;
 $fz-big: $h4;
-// $fw: font-weight: 500;
 $font-size: $h5;
 
 // element-size
@@ -41,10 +41,8 @@ $green: #4cd964;
 $teal: #5ac8fa;
 $blue: #007aff;
 $purple: #5856d6;
-
 $pink: #ff3d55;
-
-$gray: rgba(4,4,15,.45);
+$gray: #e0e0e0;
 $black: #04040f;
 $white: #f9f9f9;
 
@@ -56,13 +54,9 @@ $dark-blue-ii: #495a80;
 $dark-green: #008573;
 $dark-teal: #ddf0ed;
 $dark-purple: #6f599c;
-
 $dark-pink: #fdd3e1;
 
-$dark-black: #303030;
-$dark-gray: #e0e0e0;
-$dark-white: #f9f9f9;
-
+// count value
 $count-color: #111111;
 
 // font

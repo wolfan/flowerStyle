@@ -1,26 +1,24 @@
 // SCSS引导
-
 @import "restarigi";
-
 @import "valoro";
-@import "fn"; // 函数部分
-@import "lang"; // 语言
+@import "lang";
+@import "fn";
 
-@import "koloro";
-
-// 基础
-@import "tipo"; // 文本
-@import "butono";  // 按钮
+// 基础式样
+@import "test";
+@import "list";
+@import "image";
 @import "table";
-@import "divider";  // 分隔线
+@import "button";
 
-// 布局
+// 辅助式样：color,layout,float,size,divider.
+@import "koloro";
 @import "arango";
+@import "flosas";
+@import "grandeco";
+@import "divisor";
 
-// 辅助
-@import "media";
-@import "tabs";
-
-// 图标
-@import "icon/valoro";
-@import "icon/ikono";
+// 组件
+@import "pop";
+@import "card";
+@import "block";

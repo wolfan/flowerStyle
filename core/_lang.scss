@@ -1,33 +1,50 @@
 // 语言部分
+// <div class="zh" lang="zh">
 
+// CJK字符集。
+.zh,
 :lang(zh),
 :lang(zh-Hans),
 :lang(zh-cmn),
 :lang(zh-cmn-Hans){
   font-family: $lang-hans;
 }
-
+.tw,
 :lang(zh-Hant),
 :lang(zh-cmn-Hant){
   font-family: $lang-hant;
 }
-
+.ja,
 :lang(ja){
   font-family: $lang-jp;
 }
+.ko,
 :lang(ko){
   font-family: $lang-kr;
 }
+
+// 拉丁字母。
+.en,
 :lang(en){
   font-family: $lang-en;
 }
+
+// 针对非拉丁字母。
+.ru,
 :lang(ru){
   font-family: $lang-ru;
 }
+
+// 针对带音标的语言。
+.fr,
 :lang(fr){
   font-family: $lang-fr;
 }
+
+// 针对右起左书的语言。
+.ar,
+.il,
+:lang(il),
 :lang(ar){
   font-family: $lang-ar;
 }
-// <html lang="ar" dir="rtl">

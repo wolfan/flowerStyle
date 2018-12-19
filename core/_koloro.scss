@@ -1,0 +1,77 @@
+// Color's
+
+.red,
+.hong,
+*[data-color="red"]{
+  background-color: $red;
+  color: $white;
+}
+
+.orange,
+.cheng,
+*[data-color="orange"]{
+  background-color: $orange;
+  color: $white;
+}
+
+.yellow,
+.huang,
+*[data-color="yellow"]{
+  background-color: $yellow;
+  color: $white;
+}
+
+.green,
+*[data-color="green"]{
+  background-color: $green;
+  color: $white;
+}
+
+.teal,
+.qin,
+*[data-color="teal"]{
+  background-color: $teal;
+  color: $white;
+}
+
+.blue,
+.lan,
+*[data-color="blue"]{
+  background-color: $blue;
+  color: $white;
+}
+
+.purple,
+.zi,
+*[data-color="purple"]{
+  background-color: $purple;
+  color: $white;
+}
+
+.pink,
+.feng,
+*[data-color="pink"]{
+  background-color: $pink;
+  color: $white;
+}
+
+.gray,
+.hui,
+*[data-color="gray"]{
+  background-color: $gray;
+  color: $black;
+}
+
+.white,
+.bai,
+*[data-color="white"]{
+  background-color: $white;
+  color: $black;
+}
+
+.black,
+.hei,
+*[data-color="black"]{
+  background-color: $black;
+  color: $white;
+}

@@ -7,38 +7,38 @@
 :lang(zh-Hans),
 :lang(zh-cmn),
 :lang(zh-cmn-Hans){
-  font-family: $lang-hans;
+  font-family: $lang-cjk;
 }
 .tw,
 :lang(zh-Hant),
 :lang(zh-cmn-Hant){
-  font-family: $lang-hant;
+  font-family: $lang-cjk-old;
 }
 .ja,
 :lang(ja){
-  font-family: $lang-jp;
+  font-family: $lang-cjk-jp;
 }
 .ko,
 :lang(ko){
-  font-family: $lang-kr;
+  font-family: $lang-cjk-kr;
 }
 
 // 拉丁字母。
 .en,
 :lang(en){
-  font-family: $lang-en;
+  font-family: $lang-abc;
 }
 
 // 针对非拉丁字母。
 .ru,
 :lang(ru){
-  font-family: $lang-ru;
+  font-family: $lang-abc-alpha;
 }
 
 // 针对带音标的语言。
 .fr,
 :lang(fr){
-  font-family: $lang-fr;
+  font-family: $lang-abc-sign;
 }
 
 // 针对右起左书的语言。
@@ -46,5 +46,5 @@
 .il,
 :lang(il),
 :lang(ar){
-  font-family: $lang-ar;
+  font-family: $lang-wr;
 }

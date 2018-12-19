@@ -58,20 +58,39 @@ $dark-pink: #fdd3e1;
 
 // count value
 $count-color: #111111;
+$count-color-value: 10%;
 
-// font
+// language set.
 // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
 // https://picturepan2.github.io/spectre/
-$font-system: -apple-system, system-ui, BlinkMacSystemFont !default;
-$font-system-linux: Oxygen, Cantarell, Ubuntu !default; // KED,Gnome,Unity.
-$font-default: $font-system, 'Segoe UI', Roboto !default;
+$lang-sys-win: 'system-ui'!default;
+$lang-sys-apple: -apple-system, BlinkMacSystemFont!default;
+$lang-sys-linux: Oxygen, Cantarell, Ubuntu!default;
+$lang-sys-android: 'Roboto Mono', Roboto!default;
 
-// lang
-$lang-hans: $font-default, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', KaiTi, SimKaiti !default;
-$lang-hant: $font-default, 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei', KaiTi !default;
-$lang-jp: $font-default, 'Hiragino Sans', 'Hiragino KaKu Gothic Pro', 'Yu Gothic', YuGothic, Meiryo !default;
-$lang-kr: $font-default, 'Malgun Gothic' !default;
-$lang-en: $font-default, 'Roboto Mono', Menlo, Courier, monospace !default;
-$lang-ru: $lang-en!default;
-$lang-fr: $lang-en!default;
-$lang-ar: $lang-en!default;
+$lang-basis: $lang-sys-win, $lang-sys-apple, $lang-sys-linux, $lang-sys-android!default;
+
+$lang-hans: $lang-basis, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei'!default;
+$lang-hant: $lang-basis, 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei'!default;
+$lang-jp: $lang-basis, 'Hiragino Sans', 'Hiragino KaKu Gothic Pro', 'Yu Gothic', YuGothic, Meiryo!default;
+$lang-kr: $lang-basis, 'Malgun Gothic'!default;
+$lang-en: $lang-basis, 'Segoe UI', Menlo, Courier, monospace!default;
+$lang-fr: null;
+$lang-ru: null;
+$lang-r2l: null;
+
+// CJK
+$lang-cjk: $lang-basis, $lang-hans!default;
+$lang-cjk-old: $lang-basis, $lang-hant !default;
+$lang-cjk-jp: $lang-basis, $lang-jp!default;
+$lang-cjk-kr: $lang-basis, $lang-kr!default;
+// 字母方式
+$lang-abc: $lang-basis, $lang-en!default;
+$lang-abc-alpha: $lang-basis, $lang-fr!default;
+$lang-abc-sign: $lang-basis, $lang-ru!default;
+// 右起左书
+$lang-wr: $lang-basis, $lang-r2l!default;
+
+// 字定义语言
+$sp: KaiTi, SimKaiti!default;
+$lang-sp: $sp, $lang-basis!default;

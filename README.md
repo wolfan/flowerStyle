@@ -1,5 +1,5 @@
 <!-- grape => vinbero -->
-![vinbero](core/make/logo.png)
+![vinbero](make/grape.png)
 
 # 0.0.1 => Vinbero
 - lang: for Chinses(hans,hant)(CJK) & Arabic from right letter.

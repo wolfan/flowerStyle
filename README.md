@@ -1,0 +1,8 @@
+<!-- grape => vinbero -->
+![vinbero](core/make/logo.png)
+
+# 0.0.1 => Vinbero
+- lang: for Chinses(hans,hant)(CJK) & Arabic from right letter.
+- Basic style.
+- modals, sop.
+- grid layou.

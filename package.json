@@ -1,0 +1,10 @@
+{
+  "name":"",
+  "main":"",
+  "scripts":{
+    "run": "node-sass core/mastro.scss 0.css"
+  },
+  "devDependencies":{
+    "node-sass":"4.11.0^"
+  }
+}

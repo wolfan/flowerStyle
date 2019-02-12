@@ -6,3 +6,8 @@
 - Basic style.
 - modals, sop.
 - grid layou.
+
+# Plano
+- Chinese Color's.
+- Common Chinese-Character set (Common-3500, GB2132 and GB12345).
+  - :lang(CC)

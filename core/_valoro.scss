@@ -1,10 +1,10 @@
 // size
-$nula: .9rem;
-$xs: .3rem;
+$xxxl: 2.1rem;
+$xxl: 1.8rem;
+$xl: 1.5rem;
+$l: 1.2rem;
+$m: .9rem;
 $sm: .6rem;
-$md: 1.2rem;
-$xl: 1.8rem;
-$sl: 2.1rem;
 
 // screen size
 $sr-max: 480px;
@@ -20,48 +20,42 @@ $sr-hdtv: 1920px;
 $sr-max: $sr-hdtv;
 
 // font-size
-$h1: 2.1rem;
-$h2: 1.8rem;
-$h3: 1.5rem;
-$h4: 1.2rem;
-$h5: .9rem;
-$h6: .6rem;
-$fz: $h5;
-$fz-big: $h4;
-$font-size: $h5;
+$h1: $xxxl;
+$h2: $xxl;
+$h3: $xl;
+$h4: $l;
+$h5: $m;
+$h6: $sm;
+
+$font-size: $m;
 
 // element-size
 // color
 // https://www.zcool.com.cn/article/ZNzc2OTI4.html
 // apple-ui color.
-// rgb(255, 59, 48)
-$red: #ff3b30;
-// rgb(255, 149, 0)
-$orange: #ff9500;
-// rgb(255, 204, 0)
-$yellow: #ffcc00;
-// rgb(76, 217, 100)
-$green: #4cd964;
-// rgb(90, 200, 250)
-$teal: #5ac8fa;
-// rgb(0, 122, 255)
-$blue: #007aff;
-// rgb(88, 86, 214)
-$purple: #5856d6;
-// rgb(255, 61, 85)
-$pink: #ff3d55;
-// rgb(48, 48, 48)
+$red-apple: #ff3b30;
+$orange-apple: #ff9500;
+$yellow-apple: #ffcc00;
+$green-apple: #4cd964;
+$teal-apple: #5ac8fa;
+$blue-apple: #007aff;
+$purple-apple: #5856d6;
+$pink-apple: #ff3d55;
+
+// https://zh.wikipedia.org/wiki/%E5%BD%A9%E8%99%B9
+$red: #f43f3b;
+$orange: #ff9700;
+$yellow: #f0c000;
+$green: #39b54a;
+$teal: #1cbbb4;
+$blue: #0078ff;
+$purple: #5e00ff;
+$indigo: #4B0082;
+$pink: #d83090;
+$brown: #a86048;
 $black: #303030;
-// rgb(249, 249, 249)
 $white: #f9f9f9;
-// rgb(175, 186, 203)
-$gray: #afbacb;
-
-$gray-02: #ddf0ed;
-
-// count value
-$count-color: #111111;
-$count-color-value: 10%;
+$gray: #d8d8d8;
 
 // language set.
 // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/

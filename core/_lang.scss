@@ -1,0 +1,10 @@
+// font-face
+:lang(en){
+  font-family: $lang-en;
+}
+:lang(zh-cmn-Hans){
+  font-family: $lang-hans;
+}
+:lang(zh-cmn-Hant){
+  font-family: $lang-hant;
+}

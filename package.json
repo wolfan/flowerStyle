@@ -1,10 +1,22 @@
 {
-  "name":"",
-  "main":"",
-  "scripts":{
-    "run": "node-sass core/mastro.scss 0.css"
+  "name": "flowerstyle",
+  "version": "0.1.0",
+  "main": "vinbero.js",
+  "description": "grape => vinbero",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "css": "node-sass core/vinbero.scss flowerStyle.css"
   },
-  "devDependencies":{
-    "node-sass":"4.11.0^"
-  }
+  "devDependencies": {
+    "node-sass": "4.11.0^"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfan/flowerStyle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wolfan/flowerStyle/issues"
+  },
+  "homepage": "https://github.com/wolfan/flowerStyle#readme"
 }

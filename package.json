@@ -6,7 +6,8 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "css": "node-sass core/vinbero.scss flowerStyle.css"
+    "css": "node-sass core/vinbero.scss flowerStyle.css",
+    "color": "node-sass core/cinio.scss core/eligo/cinio.css"
   },
   "devDependencies": {
     "node-sass": "4.11.0^"

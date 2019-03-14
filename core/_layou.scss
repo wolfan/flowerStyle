@@ -1,5 +1,28 @@
 // layou
 
+// 布局（layout）由grid实现，而导航栏（nav、menu)由flex实现。menu=>selete 由 CSS3 的盒子模型实现。
+
+// https://juejin.im/post/5c7ce781e51d4514913c5bc4
+.nav{}
+
 .container{
   margin: 0 1.2rem;
+}
+
+
+// dome css3 layout.
+// https://www.ibm.com/developerworks/cn/web/1202_zhouxiang_css3/index.html
+
+.em{
+  width: auto;
+  height: 5vh;
+  padding: 1vh 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1rem;
+  background-color: $gray - 30%;
+  -webkit-column-rule: 1px solid $green;
+  .column{
+    background-color: $gray + 30%;
+    height: 3vh;
+  }
 }

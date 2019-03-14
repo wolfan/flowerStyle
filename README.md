@@ -1,0 +1,2 @@
+grape => web
+weex  => wechat

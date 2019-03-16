@@ -136,6 +136,48 @@ button {
     background-color: #000000;
     border-color: #f0c000; }
 
+table {
+  width: 100%;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.2rem;
+  background-color: #ffffff;
+  border: 0.1rem solid #f0f0f0;
+  border-spacing: 0;
+  border-radius: .3rem;
+  padding: .1rem;
+  color: #303030; }
+  table thead tr th {
+    font-weight: 600;
+    background-color: #e3e7f1; }
+    table thead tr th:first-child {
+      border-radius: .3rem 0 0 0; }
+    table thead tr th:last-child {
+      border-radius: 0 .3rem 0 0; }
+  table tbody tr td {
+    border-bottom: 0.1rem solid #f0f0f0; }
+  table tbody tr:nth-child(2n) {
+    background-color: #f9f9f9; }
+    table tbody tr:nth-child(2n):hover {
+      background-color: #eaeaea; }
+  table tfoot tr th {
+    font-weight: 500; }
+  table tr:hover {
+    background-color: #eaeaea; }
+    table tr:hover:focus {
+      background-color: #dbdbdb; }
+  table td,
+  table th {
+    padding: .6rem .3rem; }
+  table[class*="space-line"] {
+    white-space: nowrap; }
+  table[class*="cell"] td,
+  table[class*="cell"] th {
+    border-left: 0.1rem solid #f0f0f0; }
+    table[class*="cell"] td:first-child,
+    table[class*="cell"] th:first-child {
+      border-left: none; }
+
 .container {
   margin: 0 1.2rem; }
 

@@ -1,0 +1,86 @@
+// table style
+// https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-classes
+
+
+// border-size: .1rem;
+// border-color: #f0f0f0;
+// bg-table-column: #f9f9f9;
+// bg-table-header: #f0f0f0;
+// size-padding: .6rem .3rem;
+// font-szie: 1rem;
+
+table{
+  width: 100%;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.8rem;
+  background-color: $white-true;
+  border: .1rem solid $table-bd-color;
+  border-spacing: 0;
+  border-radius: .3rem;
+  padding: .1rem;
+  color: $black;
+
+  thead{
+    tr{
+      th{
+        font-weight: 600;
+        background-color: $color-gray;
+
+        &:first-child{border-radius: .3rem 0 0 0;}
+        &:last-child{border-radius: 0 .3rem 0 0;}
+      }
+    }
+  }
+
+  tbody{
+    tr{
+      td{
+        border-bottom: .1rem solid $table-bd-color;
+      }
+
+      // 隔行渐变
+      // https://developer.mozilla.org/zh-CN/docs/Web/CSS/:nth-child
+      &:nth-child(2n){
+        background-color: $table-bg;
+        &:hover{
+          background-color: $table-bg - 15%;
+        }
+      }
+    }
+  }
+
+  tfoot{
+    tr{
+      th{
+        font-weight: 500;
+      }
+    }
+  }
+
+  // hover, focus
+  & tr:hover{
+    background-color: $table-bg - 15%;
+    &:focus{
+      background-color: $table-bg - 30%;
+    }
+  }
+
+  // column
+  & td,
+  & th{
+    padding: .6rem .3rem;
+  }
+
+  // table class
+  &[class*="space-line"]{
+    white-space: nowrap;
+  }
+  &[class*="cell"]{
+    & td,
+    & th{
+      border-left: .1rem solid $table-bd-color;
+      &:first-child{border-left: none;}
+    }
+  }
+}

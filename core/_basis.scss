@@ -1,6 +1,6 @@
 body{
   margin: 0 auto;
-  color: $black;
+  color: $font-color;
   font-size: $font-size;
 }
 
@@ -44,7 +44,7 @@ h6{
 
 p{
   margin-top: 0;
-  margin-bottom: $font-size;
+  margin-bottom: $font-size / 2;
 }
 span{}
 
@@ -109,15 +109,15 @@ sup{
 }
 time{
   color: $white;
-  background-color: $teal;
-  border: .1rem solid $teal - 30%;
+  background-color: $cyan;
+  border: .1rem solid $cyan - 30%;
   border-radius: .2rem;
   padding: .3rem .6rem .3rem .3rem;
   &::before{
     content: '⏳ ';
   }
   &:hover{
-    background-color: $teal - 30%;
+    background-color: $cyan - 30%;
   }
 }
 

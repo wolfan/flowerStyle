@@ -1,89 +1,22 @@
 // color's
+.red{}
+.orange{}
+.yellow{}
+.green{}
+.cyan{}
+.blue{}
+.purple{}
+.dian,
+.indigo{}
+.pink{}
+.tea,
+.brown{}
+.black{}
+.gray{}
+.white{}
 
-.red{
-  background-color: $red;
-  color: $white;
-  &:hover{
-    background-color: $red - 30%;
-  }
-}
-.gold,
-.orange{
-  background-color: $orange;
-  color: $white;
-  &:hover{
-    background-color: $orange - 30%;
-  }
-}
-.yellow{
-  background-color: $yellow;
-  color: $white;
-  &:hover{
-    background-color: $yellow - 30%;
-  }
-}
-.green{
-  background-color: $green;
-  color: $white;
-  &:hover{
-    background-color: $green - 30%;
-  }
-}
-.cyan,
-.teal{
-  background-color: $teal;
-  color: $white;
-  &:hover{
-    background-color: $teal - 30%;
-  }
-}
-.blue{
-  background-color: $blue;
-  color: $white;
-  &:hover{
-    background-color: $blue - 30%;
-  }
-}
-.violet,
-.purple{
-  background-color: $purple;
-  color: $white;
-  &:hover{
-    background-color: $purple - 30%;
-  }
-}
-.pink{
-  background-color: $pink;
-  color: $white;
-  &:hover{
-    background-color: $pink - 30%;
-  }
-}
-.brown{
-  background-color: $brown;
-  color: $white;
-  &:hover{
-    background-color: $brown - 30%;
-  }
-}
-.black{
-  background-color: $black;
-  color: $white;
-  &:hover{
-    background-color: $black - 30%;
-  }
-}
-.white{
-  background-color: $white;
-  color: $black;
-  &:hover{
-    background-color: $white - 30%;
-  }
-}
-.gray{
-  background-color: $gray;
-  color: $white;
-  &:hover{
-    background-color: $gray - 30%;
-  }
-}
+.gold{}
+.yin,
+.silver{}
+.tong,
+.copper{}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hans">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,83 +8,105 @@
   <link rel="stylesheet" href="flowerStyle.css">
 </head>
 <body>
+  <div class="container">
+    <h1>Road to Road, 非常道。</h1>
+    <h2>Road to Road, 非常道。</h2>
+    <h3>Road to Road, 非常道。</h3>
+    <h4>Road to Road, 非常道。</h4>
+    <h5>Road to Road, 非常道。</h5>
+    <h6>Road to Road, 非常道。</h6>
+    <p>凡有皆始于无，<mark>故“未形”、“无名”之时则为万物之始。</mark>及其“有形”、“有名”之时，<samp>则长之育之，亭之毒之，</samp>为其母也。言道以无形无名始成万物，以始以成而不知其所以，玄之又玄也。</p>
+    <p>The Tao that can be described is not the enduring and unchanging Tao. <mark>The name that can be named is not the enduring and unchanging name.</mark> <span>(Conceived of as)</span> having no name, it is the Originator of heaven and earth; (conceived of as) having a name, it is the Mother of all things.</p>
 
-  <h1>道可道非常道名可名非常名</h1>
-  <h2>道可道非常道名可名非常名</h2>
-  <h3>道可道非常道名可名非常名</h3>
-  <h4>道可道非常道名可名非常名</h4>
-  <h5>道可道非常道名可名非常名</h5>
-  <h6>道可道非常道名可名非常名</h6>
-  <p>凡有皆始于无，故“未形”、“无名”之时则为万物之始。及其“有形”、“有名”之时，则长之育之，亭之毒之，为其母也。言道以无形无名始成万物，以始以成而不知其所以，玄之又玄也。</p>
-  <p>两者，始与母也。同出者，同出于玄也。异名，所施不可同也。在首则谓之始，在终则谓之母。<mark>玄者，冥也，</mark>默然无有也始、母之所出也，不可得而名，故不可言同名曰玄。而言谓之玄者，取于不可得而谓之然也。谓之然则不可以定乎一玄。而已则是名则失之远矣。故曰，玄之又玄也。众妙皆从同而出，故曰众妙之门也。</p>
-
-  <hr>
-
-  <button>道可道</button>
-  <button>Doctrine</button>
-  <div class="bn">link doc</div>
-
-  <div id="kode"></div>
-
-  <div id="ele">
-    <abbr title="???">abbr</abbr>
-    <b>bold</b> <strong>Strong</strong>
-    <code>coding</code> <mark>markdown</mark> <kbd>Ctrl+v</kbd>
-    <del>Delete</del> <s>Strikethrough</s>
-    <ins>inserted</ins> <u>nderline</u>
-
-    <ruby>
-      SA
-      <rt>xxxx</rt>
-    </ruby>
-
-    <sub>sub</sub>Grape<sup>sup</sup>
-
-    <time>23:32</time>
-
-  </div>
-  
-  <script>
-    const d= ['Typography', 'sets', 'default', 'styles', 'for', 'headings', 'paragraphs', 'semantic', 'text', 'blockquote', 'and', 'lists' ,'elements'];
-    for(i in d){
-    document.getElementById('kode').innerHTML+= `<div class="bn">${d[i]}</div>`
-    }
-  </script>
-
-  <hr>
-  <div class="em">
-    <div class="column">col-1</div>
-    <div class="column">col-2</div>
-    <div class="column">col-3</div>
-  </div>
-
-  <!-- pop window -->
-  <div id="skar" class="ska">
-    <a href="#/" class="fono"></a>
-    <div class="work">
-      <h1>21212</h1>
+    <div class="row">
+      <div class="col-6">
+        <sub>下标</sub>Asian<sup>上标</sup>
+        <ruby>包子<rt>Baozi</rt></ruby>
+        <mark>height leng</mark>
+        <code>console.log(123);</code>
+        <kbd>Caps lock</kbd>
+        <time>24:00</time>
+      </div>
+      <div class="col-6">
+        <abbr title="提示呗">提示</abbr>
+        <b>加粗</b> <strong>粗大</strong>
+        <cite>斜体</cite> <i>斜的</i> <em>Italic</em>
+        <ins>下划线</ins> <u>Underline</u>
+        <s>删除线</s> <del>Strikethrough</del>
+      </div>
     </div>
+
+    <div id="button-gup">
+      <div class="row">
+          <button>향로봉에</button> <button>햇빛 비쳐</button> <button class="bn">보라빛</button> <button class="bn bn-not">안개 어리고</button> <button class="bn bn-link">아득히</button> <button class="bn red">보아하니 폭포가 강에 걸렸네.</button> <a class="bn">물줄기</a> <a class="bn bn-link">날듯이</a> <a class="bn green">쏟아지니 그 길이 삼천 자 마치 은하수가 구천으로 쏟아지는 듯.</a>
+      </div>
+      <div id="button-script" class="row"></div>
+      <script>
+        const buPut= document.querySelector('#button-script');
+        const buDat= ['ここでは','『古事記』','の内容の要点を天地開闢','か','ら挙げ','、','さらに、それぞれの御代','の事跡は異','なるが政治','について','の','記載にはほぼ','誤りはなか','ったと','述べてい','る','。'];
+        for(let i in buDat){buPut.innerHTML+=`<a class="bn">${buDat[i]}</a>`}
+      </script>
+    </div>
+
+    <style>
+      #krado-gup{
+        overflow: hidden;
+        margin: 1.2rem auto;
+      }
+      .bloko{
+        padding: .6rem;
+        display: inline-block;
+        margin: .1rem;
+      }
+    </style>
+    <div id="krado-gup"></div>
+    <script>
+      const krado= document.querySelector('#krado-gup');
+      const colorDat= ['red','orange','yellow','green','cyan','blue','purple','pink','brown','black','gray','white'];
+      for(let i in colorDat){
+        krado.innerHTML+= `<div class='bloko ${colorDat[i]}'>${colorDat[i]}</div>`;
+      }
+    </script>
+
+    <table>
+        <thead>
+          <tr>
+            <th>道德经</th>
+            <th>论语</th>
+            <th>诗经</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tao Te Ching</td>
+            <td>Analects</td>
+            <td>The Religious Portions of the Shih King</td>
+          </tr>
+          <tr>
+            <td>Tao Tö King</td>
+            <td>Les Entretiens de Confucius</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>도덕경</td>
+            <td>논어</td>
+            <td>시경</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>123</th>
+            <th>321</th>
+            <th>213</th>
+          </tr>
+        </tfoot>
+      </table>
+
+    <div id="from-gup"></div>
+
+    <div id="imager-gup"></div>
+
   </div>
-
-  <a href="#skar" class="bn">pop window</a>
-
-  <hr>
-  <style>
-    .krado-gup, .row{width: auto; overflow: hidden;}
-    .krado{float: left; padding: .6rem; border-radius: .3rem; margin-left: .3rem;}
-  </style>
-  <div id="krado-gup">
-    <!-- <div class="row">
-      <div class="krado"></div>
-    </div> -->
-  </div>
-  <script>
-    const krado= document.querySelector('#krado-gup');
-    const colorDat=['red','orange','yellow','green','cyan','blue','purple','pink','black','gray','white'];
-    for(i in colorDat){
-      krado.innerHTML+= `<div class="krado ${colorDat[i]}">${colorDat[i]}</div>`;
-    }
-  </script>
-
+    
 </body>
 </html>

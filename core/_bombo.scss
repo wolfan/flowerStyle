@@ -1,0 +1,42 @@
+// 弹出的模拟窗口。
+
+.fenestro,
+.window,
+.modld,
+.bomb,
+.ska{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  .kurteno,
+  .fono,
+  .bg{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: $black;
+    opacity: .3;
+    cursor: not-allowed;
+  }
+  .work{
+    z-index: 999;
+    position: fixed;
+    background-color: $white-true;
+    border: 1px solid $gray;
+    padding: .6rem;
+    .header{}
+    .content{}
+    .food{}
+  }
+
+  &:target{
+    display: flex;
+  }
+}

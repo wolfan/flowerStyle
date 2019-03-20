@@ -1,68 +1,96 @@
-// size
-$xxxl: 2.1rem;
-$xxl: 1.8rem;
-$xl: 1.5rem;
-$l: 1.2rem;
-$m: .9rem;
-$sm: .6rem;
+// font-size
+$h1: 3.8rem;
+$h2: 3.3rem;
+$h3: 2.5rem;
+$h4: 1.81rem;
+$h5: 1.75rem;
+$h6: 1.5rem;
+
+$font-size: 1.125rem;
+$font-samll: .81rem;
 
 // screen size
-$sr-max: 480px;
 $sr-se: 320px;
 $sr-678: 375px;
-$sr-678p: 414px;
-$sr-x: $sr-678;
+$sr-regular: 375px;
+$sr-max: 414px;
+$sr-ipx: 375;
 $sr-ipad: 768px;
-$sr-ipad: 1024px;
-$sr-web: 1296px;
-$sr-air: 1280px;
-$sr-hdtv: 1920px;
-$sr-max: $sr-hdtv;
-
-// font-size
-$h1: $xxxl;
-$h2: $xxl;
-$h3: $xl;
-$h4: $l;
-$h5: $m;
-$h6: $sm;
-
-$font-size: $m;
+$sr-hdtv: 1080px;
+$screen: $sr-max;
 
 // element-size
-// color
-// https://www.zcool.com.cn/article/ZNzc2OTI4.html
-// apple-ui color.
-$red-apple: #ff3b30;
-$orange-apple: #ff9500;
-$yellow-apple: #ffcc00;
-$green-apple: #4cd964;
-$teal-apple: #5ac8fa;
-$blue-apple: #007aff;
-$purple-apple: #5856d6;
-$pink-apple: #ff3d55;
+$col-1: 8.33%;
+$col-2: 16.66%;
+$col-3: 25%;
+$col-4: 33.33%;
+$col-5: 41.66%;
+$col-6: 50%;
+$col-7: 58.33%;
+$col-8: 66.66%;
+$col-9: 75%;
+$col-10: 83.33%;
+$col-11: 91.66%;
+$col-12: 100%;
 
+// color
+// http://designmodo.github.io/Flat-UI/
+// https://www.zcool.com.cn/article/ZNzc2OTI4.html
 // https://zh.wikipedia.org/wiki/%E5%BD%A9%E8%99%B9
+$apple-red: #ff3b30;
+$apple-orange: #ff9500;
+$apple-yellow: #ffcc00;
+$apple-green: #4cd964;
+$apple-cyan: #5ac8fa;
+$apple-blue: #007aff;
+$apple-purple: #5856d6;
+$apple-pink: #ff3d55;
+$apple-black: #04040f;
+$apple-white: #fefefe;
+
+$true-red: #ff0000;
+$true-orange: #ffa500;
+$true-yellow: #ffff00;
+$true-green: #008000;
+$true-cyan: #00ffff;
+$true-blue: #0000ff;
+$true-purple: #800880;
+$true-indigo: #4b0082;
+$true-pink: #ff9ed1;
+$true-black: #000000;
+$true-gray: #808080;
+$true-white: #ffffff;
+
+$color-red: #e74c3c;
+$color-orange: #f39c12;
+$color-yellow: #f1c40f;
+$color-green: #2ecc71;
+$color-emerald: #1abc9c;
+$color-cyan: $color-emerald;
+$color-blue: #3498db;
+$color-purple: #8e44ad;
+$color-pink: $true-pink;
+$color-black: #2c3e50;
+$color-gray: #ecf0f1;
+$color-gray-1: #bdc3c7;
+$color-brown: #95a5a6;
+$color-white: $true-white;
+
 $red: #f43f3b;
 $orange: #ff9700;
 $yellow: #f0c000;
 $green: #39b54a;
-$teal: #1cbbb4;
+$cyan: #1cbbb4;
 $blue: #0078ff;
 $purple: #5e00ff;
 $indigo: #4B0082;
 $pink: #f54291;
 $brown: #a86048;
-$black: #303030;
+$black: #34495e;
 $white: #f9f9f9;
-$gray: #d8d8d8;
+$gray: #ecf0f1;
 
-$white-true: #ffffff;
-$black-true: #000000;
-
-$color-pink: #d83090;
-$color-gray: #e3e7f1;
-
+$font-color: #34495e;
 $table-bg: #f9f9f9;
 $table-bd-color: #f0f0f0;
 

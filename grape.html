@@ -58,5 +58,33 @@
     <div class="column">col-3</div>
   </div>
 
+  <!-- pop window -->
+  <div id="skar" class="ska">
+    <a href="#/" class="fono"></a>
+    <div class="work">
+      <h1>21212</h1>
+    </div>
+  </div>
+
+  <a href="#skar" class="bn">pop window</a>
+
+  <hr>
+  <style>
+    .krado-gup, .row{width: auto; overflow: hidden;}
+    .krado{float: left; padding: .6rem; border-radius: .3rem; margin-left: .3rem;}
+  </style>
+  <div id="krado-gup">
+    <!-- <div class="row">
+      <div class="krado"></div>
+    </div> -->
+  </div>
+  <script>
+    const krado= document.querySelector('#krado-gup');
+    const colorDat=['red','orange','yellow','green','cyan','blue','purple','pink','black','gray','white'];
+    for(i in colorDat){
+      krado.innerHTML+= `<div class="krado ${colorDat[i]}">${colorDat[i]}</div>`;
+    }
+  </script>
+
 </body>
 </html>

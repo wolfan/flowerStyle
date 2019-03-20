@@ -8,6 +8,84 @@
 :lang(zh-cmn-Hant) {
   font-family: "system-ui", -apple-system, BlinkMacSystemFont, Oxygen, Cantarell, Ubuntu, "Roboto Mono", Roboto, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei"; }
 
+.red {
+  background-color: #f43f3b;
+  color: #f9f9f9; }
+  .red:hover {
+    background-color: #d6211d; }
+
+.gold,
+.orange {
+  background-color: #ff9700;
+  color: #f9f9f9; }
+  .gold:hover,
+  .orange:hover {
+    background-color: #e17900; }
+
+.yellow {
+  background-color: #f0c000;
+  color: #f9f9f9; }
+  .yellow:hover {
+    background-color: #d2a200; }
+
+.green {
+  background-color: #39b54a;
+  color: #f9f9f9; }
+  .green:hover {
+    background-color: #1b972c; }
+
+.cyan,
+.teal {
+  background-color: #1cbbb4;
+  color: #f9f9f9; }
+  .cyan:hover,
+  .teal:hover {
+    background-color: #009d96; }
+
+.blue {
+  background-color: #0078ff;
+  color: #f9f9f9; }
+  .blue:hover {
+    background-color: #005ae1; }
+
+.violet,
+.purple {
+  background-color: #5e00ff;
+  color: #f9f9f9; }
+  .violet:hover,
+  .purple:hover {
+    background-color: #4000e1; }
+
+.pink {
+  background-color: #f54291;
+  color: #f9f9f9; }
+  .pink:hover {
+    background-color: #d72473; }
+
+.brown {
+  background-color: #a86048;
+  color: #f9f9f9; }
+  .brown:hover {
+    background-color: #8a422a; }
+
+.black {
+  background-color: #303030;
+  color: #f9f9f9; }
+  .black:hover {
+    background-color: #121212; }
+
+.white {
+  background-color: #f9f9f9;
+  color: #303030; }
+  .white:hover {
+    background-color: #dbdbdb; }
+
+.gray {
+  background-color: #d8d8d8;
+  color: #f9f9f9; }
+  .gray:hover {
+    background-color: #bababa; }
+
 body {
   margin: 0 auto;
   color: #303030;
@@ -140,7 +218,7 @@ table {
   width: 100%;
   font-size: 1rem;
   text-align: left;
-  line-height: 1.2rem;
+  line-height: 1.8rem;
   background-color: #ffffff;
   border: 0.1rem solid #f0f0f0;
   border-spacing: 0;
@@ -192,3 +270,56 @@ table {
   .em .column {
     background-color: #f6f6f6;
     height: 3vh; }
+
+.fenestro,
+.window,
+.modld,
+.bomb,
+.ska {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center; }
+  .fenestro .kurteno,
+  .fenestro .fono,
+  .fenestro .bg,
+  .window .kurteno,
+  .window .fono,
+  .window .bg,
+  .modld .kurteno,
+  .modld .fono,
+  .modld .bg,
+  .bomb .kurteno,
+  .bomb .fono,
+  .bomb .bg,
+  .ska .kurteno,
+  .ska .fono,
+  .ska .bg {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #303030;
+    opacity: .3;
+    cursor: not-allowed; }
+  .fenestro .work,
+  .window .work,
+  .modld .work,
+  .bomb .work,
+  .ska .work {
+    z-index: 999;
+    position: fixed;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    padding: .6rem; }
+  .fenestro:target,
+  .window:target,
+  .modld:target,
+  .bomb:target,
+  .ska:target {
+    display: flex; }

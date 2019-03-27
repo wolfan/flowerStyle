@@ -8,128 +8,44 @@
 :lang(zh-cmn-Hant) {
   font-family: "system-ui", -apple-system, BlinkMacSystemFont, Oxygen, Cantarell, Ubuntu, "Roboto Mono", Roboto, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei"; }
 
-.red {
-  background-color: #f43f3b;
-  color: #f9f9f9; }
-  .red:hover {
-    background-color: #d6211d; }
-
-.gold,
-.orange {
-  background-color: #ff9700;
-  color: #f9f9f9; }
-  .gold:hover,
-  .orange:hover {
-    background-color: #e17900; }
-
-.yellow {
-  background-color: #f0c000;
-  color: #f9f9f9; }
-  .yellow:hover {
-    background-color: #d2a200; }
-
-.green {
-  background-color: #39b54a;
-  color: #f9f9f9; }
-  .green:hover {
-    background-color: #1b972c; }
-
-.cyan,
-.teal {
-  background-color: #1cbbb4;
-  color: #f9f9f9; }
-  .cyan:hover,
-  .teal:hover {
-    background-color: #009d96; }
-
-.blue {
-  background-color: #0078ff;
-  color: #f9f9f9; }
-  .blue:hover {
-    background-color: #005ae1; }
-
-.violet,
-.purple {
-  background-color: #5e00ff;
-  color: #f9f9f9; }
-  .violet:hover,
-  .purple:hover {
-    background-color: #4000e1; }
-
-.pink {
-  background-color: #f54291;
-  color: #f9f9f9; }
-  .pink:hover {
-    background-color: #d72473; }
-
-.brown {
-  background-color: #a86048;
-  color: #f9f9f9; }
-  .brown:hover {
-    background-color: #8a422a; }
-
-.black {
-  background-color: #303030;
-  color: #f9f9f9; }
-  .black:hover {
-    background-color: #121212; }
-
-.white {
-  background-color: #f9f9f9;
-  color: #303030; }
-  .white:hover {
-    background-color: #dbdbdb; }
-
-.gray {
-  background-color: #d8d8d8;
-  color: #f9f9f9; }
-  .gray:hover {
-    background-color: #bababa; }
-
 body {
   margin: 0 auto;
-  color: #303030;
+  color: #34495e;
   font-size: 0.9rem; }
 
-.h1, .h2, .h3, .h4,
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 0.9rem; }
-
-.h5, .h6,
-h5, h6 {
-  font-weight: 600;
   margin-top: 0;
   margin-bottom: 0.9rem; }
 
 .h1,
 h1 {
-  font-size: 2.1rem; }
+  font-size: 3.8rem; }
 
 .h2,
 h2 {
-  font-size: 1.8rem; }
+  font-size: 3.3rem; }
 
 .h3,
 h3 {
-  font-size: 1.5rem; }
+  font-size: 2.5rem; }
 
 .h4,
 h4 {
-  font-size: 1.2rem; }
+  font-size: 1.81rem; }
 
 .h5,
 h5 {
-  font-size: 0.9rem; }
+  font-size: 1.75rem; }
 
 .h6,
 h6 {
-  font-size: 0.6rem; }
+  font-size: 1.5rem; }
 
 p {
   margin-top: 0;
-  margin-bottom: 0.9rem; }
+  margin-bottom: 0.45rem; }
 
 b,
 strong {
@@ -144,18 +60,18 @@ kbd {
   color: #f9f9f9;
   padding: .3rem;
   border-radius: .2rem;
-  background-color: #303030; }
+  background-color: #34495e; }
   kbd:hover {
-    background-color: #4e4e4e; }
+    background-color: #52677c; }
 
 mark {
-  color: #303030;
+  color: #34495e;
   background-color: #f0c000;
   border-bottom: 1px solid #d2a200;
   border-radius: .2rem;
   padding: 0 .2rem; }
   mark:hover {
-    color: #4e4e4e;
+    color: #52677c;
     background-color: #ffde1e; }
 
 .code {
@@ -173,11 +89,11 @@ code {
   padding: .1rem .3rem; }
 
 ruby rt {
-  color: #9c9c9c; }
+  color: #b0b4b5; }
 
 sub,
 sup {
-  color: #9c9c9c; }
+  color: #b0b4b5; }
 
 time {
   color: #f9f9f9;
@@ -194,7 +110,7 @@ time {
 button {
   border-style: none;
   color: #f9f9f9;
-  background-color: #303030;
+  background-color: #34495e;
   border: 1px solid #000000;
   font-size: 0.9rem;
   line-height: 0.9rem;
@@ -208,7 +124,7 @@ button {
   .bn:focus, .bn:hover,
   button:focus,
   button:hover {
-    background-color: #4e4e4e; }
+    background-color: #52677c; }
   .bn:active,
   button:active {
     background-color: #000000;
@@ -220,30 +136,30 @@ table {
   text-align: left;
   line-height: 1.8rem;
   background-color: #ffffff;
-  border: 0.1rem solid #f0f0f0;
+  border: 0.1rem solid #bdc3c7;
   border-spacing: 0;
   border-radius: .3rem;
   padding: .1rem;
-  color: #303030; }
+  color: #34495e; }
   table thead tr th {
     font-weight: 600;
-    background-color: #e3e7f1; }
+    background-color: #95a5a6; }
     table thead tr th:first-child {
       border-radius: .3rem 0 0 0; }
     table thead tr th:last-child {
       border-radius: 0 .3rem 0 0; }
   table tbody tr td {
-    border-bottom: 0.1rem solid #f0f0f0; }
+    border-bottom: 0.1rem solid #bdc3c7; }
   table tbody tr:nth-child(2n) {
-    background-color: #f9f9f9; }
+    background-color: #ecf0f1; }
     table tbody tr:nth-child(2n):hover {
-      background-color: #eaeaea; }
+      background-color: #dde1e2; }
   table tfoot tr th {
     font-weight: 500; }
   table tr:hover {
-    background-color: #eaeaea; }
+    background-color: #dde1e2; }
     table tr:hover:focus {
-      background-color: #dbdbdb; }
+      background-color: #ced2d3; }
   table td,
   table th {
     padding: .6rem .3rem; }
@@ -251,7 +167,7 @@ table {
     white-space: nowrap; }
   table[class*="cell"] td,
   table[class*="cell"] th {
-    border-left: 0.1rem solid #f0f0f0; }
+    border-left: 0.1rem solid #bdc3c7; }
     table[class*="cell"] td:first-child,
     table[class*="cell"] th:first-child {
       border-left: none; }
@@ -265,10 +181,10 @@ table {
   padding: 1vh 0;
   -webkit-column-count: 3;
   -webkit-column-gap: 1rem;
-  background-color: #bababa;
+  background-color: #ced2d3;
   -webkit-column-rule: 1px solid #39b54a; }
   .em .column {
-    background-color: #f6f6f6;
+    background-color: white;
     height: 3vh; }
 
 .fenestro,
@@ -304,7 +220,7 @@ table {
     right: 0;
     bottom: 0;
     position: absolute;
-    background-color: #303030;
+    background-color: #34495e;
     opacity: .3;
     cursor: not-allowed; }
   .fenestro .work,
@@ -315,7 +231,7 @@ table {
     z-index: 999;
     position: fixed;
     background-color: #ffffff;
-    border: 1px solid #d8d8d8;
+    border: 1px solid #ecf0f1;
     padding: .6rem; }
   .fenestro:target,
   .window:target,

@@ -1,0 +1,25 @@
+// butono
+.bn,
+button{
+  border-style: none;
+  color: $white;
+  background-color: $black;
+  border: 1px solid $black / 2;
+  font-size: $font-size;
+  line-height: $font-size;
+  padding: .6rem .9rem;
+  border-radius: .2rem;
+  white-space: nowrap;
+  margin: .1rem;
+  line-break: normal;
+  display: inline-block;
+  outline: 0;
+  &:focus,
+  &:hover{
+    background-color: $black + 30%;
+  }
+  &:active{
+    background-color: #000000;
+    border-color: $yellow;
+  }
+}

@@ -4,15 +4,9 @@ body{
   font-size: $font-size;
 }
 
-.h1,.h2,.h3,.h4,
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
   font-weight: 500;
-  margin-top: 0;
-  margin-bottom: $font-size;
-}
-.h5,.h6,
-h5,h6{
-  font-weight: 600;
   margin-top: 0;
   margin-bottom: $font-size;
 }
@@ -108,41 +102,10 @@ sup{
   color: $gray - 60%;
 }
 time{
-  color: $white;
-  background-color: $cyan;
-  border: .1rem solid $cyan - 30%;
-  border-radius: .2rem;
-  padding: .3rem .6rem .3rem .3rem;
   &::before{
     content: '⏳ ';
   }
   &:hover{
     background-color: $cyan - 30%;
-  }
-}
-
-// button
-.bn,
-button{
-  border-style: none;
-  color: $white;
-  background-color: $black;
-  border: 1px solid #000000;
-  font-size: $font-size;
-  line-height: $font-size;
-  padding: .6rem .9rem;
-  border-radius: .2rem;
-  white-space: nowrap;
-  margin: .1rem;
-  line-break: normal;
-  display: inline-block;
-  outline: 0;
-  &:focus,
-  &:hover{
-    background-color: $black + 30%;
-  }
-  &:active{
-    background-color: #000000;
-    border-color: $yellow;
   }
 }

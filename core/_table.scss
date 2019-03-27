@@ -25,10 +25,10 @@ table{
     tr{
       th{
         font-weight: 600;
-        background-color: $color-gray;
+        background-color: $table-hd-color;
 
-        &:first-child{border-radius: .3rem 0 0 0;}
-        &:last-child{border-radius: 0 .3rem 0 0;}
+        &:first-child{border-radius: .25rem 0 0 0;}
+        &:last-child{border-radius: 0 .25rem 0 0;}
       }
     }
   }
@@ -42,9 +42,9 @@ table{
       // 隔行渐变
       // https://developer.mozilla.org/zh-CN/docs/Web/CSS/:nth-child
       &:nth-child(2n){
-        background-color: $table-bg;
+        background-color: $table-row-color;
         &:hover{
-          background-color: $table-bg - 15%;
+          background-color: $table-row-color - 15%;
         }
       }
     }
@@ -60,9 +60,9 @@ table{
 
   // hover, focus
   & tr:hover{
-    background-color: $table-bg - 15%;
+    background-color: $table-row-color - 15%;
     &:focus{
-      background-color: $table-bg - 30%;
+      background-color: $table-row-color - 30%;
     }
   }
 

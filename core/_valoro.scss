@@ -18,14 +18,11 @@ $font-size: .9rem;
 $font-samll: .81rem;
 
 // screen size
-$sr-se: 320px;
-$sr-678: 375px;
-$sr-regular: 375px;
-$sr-max: 414px;
-$sr-ipx: 375;
-$sr-ipad: 768px;
-$sr-hdtv: 1080px;
-$screen: $sr-max;
+$screen-1080: 1920px;
+$screen-1024: 1024px;
+$screen-800: 800px;
+$screen-phone-max: 414px;
+$screen-phone-min: 375px;
 
 // element-size
 $col-1: 8.33%;
@@ -103,10 +100,13 @@ $silver: 1;
 $copper: 1;
 
 $font-color: #34495e;
-$table-hd-color: #95a5a6;
+
+$table-hd-color: $apple-blue;
 $table-bd-color: #bdc3c7;
 $table-row-color: #ecf0f1;
 
+// color array.
+$colors: $red $orange $yellow $green $cyan $blue $purple $indigo $pink $brown $black $gray $white;
 
 // language set.
 // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
@@ -142,3 +142,5 @@ $lang-wr: $lang-basis, $lang-r2l!default;
 // 字定义语言
 $sp: KaiTi, SimKaiti!default;
 $lang-sp: $sp, $lang-basis!default;
+
+// template code's

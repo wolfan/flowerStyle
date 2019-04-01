@@ -95,23 +95,18 @@ sub,
 sup {
   color: #b0b4b5; }
 
-time {
-  color: #f9f9f9;
-  background-color: #1cbbb4;
-  border: 0.1rem solid #009d96;
-  border-radius: .2rem;
-  padding: .3rem .6rem .3rem .3rem; }
-  time::before {
-    content: '⏳ '; }
-  time:hover {
-    background-color: #009d96; }
+time::before {
+  content: '⏳ '; }
+
+time:hover {
+  background-color: #009d96; }
 
 .bn,
 button {
   border-style: none;
   color: #f9f9f9;
   background-color: #34495e;
-  border: 1px solid #000000;
+  border: 1px solid #1a252f;
   font-size: 0.9rem;
   line-height: 0.9rem;
   padding: .6rem .9rem;
@@ -132,60 +127,650 @@ button {
 
 table {
   width: 100%;
-  font-size: 1rem;
   text-align: left;
-  line-height: 1.8rem;
+  border-spacing: 0;
+  margin: .3rem auto;
+  font-size: .9rem;
+  line-height: 1.5rem;
   background-color: #ffffff;
   border: 0.1rem solid #bdc3c7;
-  border-spacing: 0;
   border-radius: .3rem;
-  padding: .1rem;
-  color: #34495e; }
+  padding: 0 1px 1px; }
   table thead tr th {
-    font-weight: 600;
-    background-color: #95a5a6; }
-    table thead tr th:first-child {
-      border-radius: .3rem 0 0 0; }
-    table thead tr th:last-child {
-      border-radius: 0 .3rem 0 0; }
+    border-bottom: 0.1rem solid #bdc3c7;
+    font-weight: 600; }
   table tbody tr td {
-    border-bottom: 0.1rem solid #bdc3c7; }
-  table tbody tr:nth-child(2n) {
-    background-color: #ecf0f1; }
-    table tbody tr:nth-child(2n):hover {
-      background-color: #dde1e2; }
+    border-bottom: 1px solid #bdc3c7; }
   table tfoot tr th {
     font-weight: 500; }
-  table tr:hover {
-    background-color: #dde1e2; }
-    table tr:hover:focus {
-      background-color: #ced2d3; }
-  table td,
-  table th {
-    padding: .6rem .3rem; }
-  table[class*="space-line"] {
-    white-space: nowrap; }
-  table[class*="cell"] td,
-  table[class*="cell"] th {
-    border-left: 0.1rem solid #bdc3c7; }
-    table[class*="cell"] td:first-child,
-    table[class*="cell"] th:first-child {
-      border-left: none; }
+  table th,
+  table td {
+    padding: .6rem; }
+  table[class*="basis"] {
+    width: auto; }
+  table[class*="touch"] tbody tr:hover {
+    background-color: #ecf0f1; }
+  table[class*="ones"] td:hover {
+    background-color: #ecf0f1; }
+  table[class*="cell"] th,
+  table[class*="cell"] td {
+    border-left: 1px solid #bdc3c7; }
+    table[class*="cell"] th:first-child,
+    table[class*="cell"] td:first-child {
+      border-left-style: none; }
+  table[class*="cell Y"] th,
+  table[class*="cell Y"] td {
+    border-bottom-style: none;
+    border-left: 1px solid #bdc3c7; }
+    table[class*="cell Y"] th:first-child,
+    table[class*="cell Y"] td:first-child {
+      border-left-style: none !important; }
+  table[class*="cell Y"] thead tr th {
+    border-bottom: 0.1rem solid #bdc3c7; }
+  table[class*="cell Y"] tfoot tr th {
+    border-top: 1px solid #bdc3c7; }
+  table[class*="color red"] {
+    border-top-style: none; }
+    table[class*="color red"] thead tr {
+      color: #f9f9f9;
+      background-color: #f43f3b; }
+      table[class*="color red"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color red"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color red"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color red"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color red"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color red"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color red"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color red"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark red"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark red"] thead tr th {
+      background-color: #f43f3b;
+      border-bottom-style: none; }
+      table[class*="dark red"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark red"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark red"] tbody tr {
+      background-color: #e5302c; }
+      table[class*="dark red"] tbody tr:hover {
+        background-color: #d6211d; }
+      table[class*="dark red"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark red"] tfoot tr {
+      background-color: #e5302c; }
+      table[class*="dark red"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark red"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color orange"] {
+    border-top-style: none; }
+    table[class*="color orange"] thead tr {
+      color: #f9f9f9;
+      background-color: #ff9700; }
+      table[class*="color orange"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color orange"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color orange"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color orange"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color orange"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color orange"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color orange"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color orange"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark orange"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark orange"] thead tr th {
+      background-color: #ff9700;
+      border-bottom-style: none; }
+      table[class*="dark orange"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark orange"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark orange"] tbody tr {
+      background-color: #f08800; }
+      table[class*="dark orange"] tbody tr:hover {
+        background-color: #e17900; }
+      table[class*="dark orange"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark orange"] tfoot tr {
+      background-color: #f08800; }
+      table[class*="dark orange"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark orange"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color yellow"] {
+    border-top-style: none; }
+    table[class*="color yellow"] thead tr {
+      color: #f9f9f9;
+      background-color: #f0c000; }
+      table[class*="color yellow"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color yellow"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color yellow"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color yellow"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color yellow"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color yellow"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color yellow"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color yellow"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark yellow"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark yellow"] thead tr th {
+      background-color: #f0c000;
+      border-bottom-style: none; }
+      table[class*="dark yellow"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark yellow"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark yellow"] tbody tr {
+      background-color: #e1b100; }
+      table[class*="dark yellow"] tbody tr:hover {
+        background-color: #d2a200; }
+      table[class*="dark yellow"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark yellow"] tfoot tr {
+      background-color: #e1b100; }
+      table[class*="dark yellow"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark yellow"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color green"] {
+    border-top-style: none; }
+    table[class*="color green"] thead tr {
+      color: #f9f9f9;
+      background-color: #39b54a; }
+      table[class*="color green"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color green"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color green"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color green"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color green"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color green"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color green"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color green"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark green"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark green"] thead tr th {
+      background-color: #39b54a;
+      border-bottom-style: none; }
+      table[class*="dark green"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark green"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark green"] tbody tr {
+      background-color: #2aa63b; }
+      table[class*="dark green"] tbody tr:hover {
+        background-color: #1b972c; }
+      table[class*="dark green"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark green"] tfoot tr {
+      background-color: #2aa63b; }
+      table[class*="dark green"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark green"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color cyan"] {
+    border-top-style: none; }
+    table[class*="color cyan"] thead tr {
+      color: #f9f9f9;
+      background-color: #1cbbb4; }
+      table[class*="color cyan"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color cyan"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color cyan"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color cyan"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color cyan"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color cyan"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color cyan"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color cyan"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark cyan"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark cyan"] thead tr th {
+      background-color: #1cbbb4;
+      border-bottom-style: none; }
+      table[class*="dark cyan"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark cyan"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark cyan"] tbody tr {
+      background-color: #0daca5; }
+      table[class*="dark cyan"] tbody tr:hover {
+        background-color: #009d96; }
+      table[class*="dark cyan"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark cyan"] tfoot tr {
+      background-color: #0daca5; }
+      table[class*="dark cyan"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark cyan"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color blue"] {
+    border-top-style: none; }
+    table[class*="color blue"] thead tr {
+      color: #f9f9f9;
+      background-color: #0078ff; }
+      table[class*="color blue"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color blue"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color blue"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color blue"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color blue"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color blue"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color blue"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color blue"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark blue"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark blue"] thead tr th {
+      background-color: #0078ff;
+      border-bottom-style: none; }
+      table[class*="dark blue"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark blue"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark blue"] tbody tr {
+      background-color: #0069f0; }
+      table[class*="dark blue"] tbody tr:hover {
+        background-color: #005ae1; }
+      table[class*="dark blue"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark blue"] tfoot tr {
+      background-color: #0069f0; }
+      table[class*="dark blue"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark blue"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color purple"] {
+    border-top-style: none; }
+    table[class*="color purple"] thead tr {
+      color: #f9f9f9;
+      background-color: #5e00ff; }
+      table[class*="color purple"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color purple"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color purple"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color purple"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color purple"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color purple"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color purple"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color purple"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark purple"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark purple"] thead tr th {
+      background-color: #5e00ff;
+      border-bottom-style: none; }
+      table[class*="dark purple"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark purple"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark purple"] tbody tr {
+      background-color: #4f00f0; }
+      table[class*="dark purple"] tbody tr:hover {
+        background-color: #4000e1; }
+      table[class*="dark purple"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark purple"] tfoot tr {
+      background-color: #4f00f0; }
+      table[class*="dark purple"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark purple"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color indigo"] {
+    border-top-style: none; }
+    table[class*="color indigo"] thead tr {
+      color: #f9f9f9;
+      background-color: #4B0082; }
+      table[class*="color indigo"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color indigo"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color indigo"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color indigo"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color indigo"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color indigo"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color indigo"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color indigo"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark indigo"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark indigo"] thead tr th {
+      background-color: #4B0082;
+      border-bottom-style: none; }
+      table[class*="dark indigo"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark indigo"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark indigo"] tbody tr {
+      background-color: #3c0073; }
+      table[class*="dark indigo"] tbody tr:hover {
+        background-color: #2d0064; }
+      table[class*="dark indigo"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark indigo"] tfoot tr {
+      background-color: #3c0073; }
+      table[class*="dark indigo"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark indigo"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color pink"] {
+    border-top-style: none; }
+    table[class*="color pink"] thead tr {
+      color: #f9f9f9;
+      background-color: #f54291; }
+      table[class*="color pink"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color pink"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color pink"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color pink"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color pink"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color pink"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color pink"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color pink"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark pink"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark pink"] thead tr th {
+      background-color: #f54291;
+      border-bottom-style: none; }
+      table[class*="dark pink"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark pink"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark pink"] tbody tr {
+      background-color: #e63382; }
+      table[class*="dark pink"] tbody tr:hover {
+        background-color: #d72473; }
+      table[class*="dark pink"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark pink"] tfoot tr {
+      background-color: #e63382; }
+      table[class*="dark pink"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark pink"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color brown"] {
+    border-top-style: none; }
+    table[class*="color brown"] thead tr {
+      color: #f9f9f9;
+      background-color: #a86048; }
+      table[class*="color brown"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color brown"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color brown"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color brown"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color brown"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color brown"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color brown"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color brown"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark brown"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark brown"] thead tr th {
+      background-color: #a86048;
+      border-bottom-style: none; }
+      table[class*="dark brown"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark brown"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark brown"] tbody tr {
+      background-color: #995139; }
+      table[class*="dark brown"] tbody tr:hover {
+        background-color: #8a422a; }
+      table[class*="dark brown"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark brown"] tfoot tr {
+      background-color: #995139; }
+      table[class*="dark brown"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark brown"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color black"] {
+    border-top-style: none; }
+    table[class*="color black"] thead tr {
+      color: #f9f9f9;
+      background-color: #34495e; }
+      table[class*="color black"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color black"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color black"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color black"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color black"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color black"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color black"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color black"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark black"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark black"] thead tr th {
+      background-color: #34495e;
+      border-bottom-style: none; }
+      table[class*="dark black"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark black"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark black"] tbody tr {
+      background-color: #253a4f; }
+      table[class*="dark black"] tbody tr:hover {
+        background-color: #162b40; }
+      table[class*="dark black"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark black"] tfoot tr {
+      background-color: #253a4f; }
+      table[class*="dark black"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark black"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color gray"] {
+    border-top-style: none; }
+    table[class*="color gray"] thead tr {
+      color: #f9f9f9;
+      background-color: #ecf0f1; }
+      table[class*="color gray"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color gray"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color gray"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color gray"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color gray"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color gray"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color gray"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color gray"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark gray"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark gray"] thead tr th {
+      background-color: #ecf0f1;
+      border-bottom-style: none; }
+      table[class*="dark gray"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark gray"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark gray"] tbody tr {
+      background-color: #dde1e2; }
+      table[class*="dark gray"] tbody tr:hover {
+        background-color: #ced2d3; }
+      table[class*="dark gray"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark gray"] tfoot tr {
+      background-color: #dde1e2; }
+      table[class*="dark gray"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark gray"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
+  table[class*="color white"] {
+    border-top-style: none; }
+    table[class*="color white"] thead tr {
+      color: #f9f9f9;
+      background-color: #f9f9f9; }
+      table[class*="color white"] thead tr th {
+        border-bottom-style: none; }
+        table[class*="color white"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="color white"] thead tr th:last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="color white"] tbody tr:hover {
+      background-color: #dde1e2; }
+    table[class*="color white"] tbody tr:nth-child(2n) {
+      background-color: #ecf0f1; }
+      table[class*="color white"] tbody tr:nth-child(2n):hover {
+        background-color: #dde1e2; }
+    table[class*="color white"] tbody tr td {
+      border-bottom-style: none; }
+    table[class*="color white"] tfoot tr th {
+      border-top: 1px solid #ecf0f1; }
+  table[class*="dark white"] {
+    padding: 0;
+    color: #f9f9f9;
+    border-top-style: none; }
+    table[class*="dark white"] thead tr th {
+      background-color: #f9f9f9;
+      border-bottom-style: none; }
+      table[class*="dark white"] thead tr th:first-child {
+        border-radius: .3rem 0 0 0; }
+      table[class*="dark white"] thead tr th:last-child {
+        border-radius: 0 .3rem 0 0; }
+    table[class*="dark white"] tbody tr {
+      background-color: #eaeaea; }
+      table[class*="dark white"] tbody tr:hover {
+        background-color: #dbdbdb; }
+      table[class*="dark white"] tbody tr td {
+        border-bottom-style: none; }
+    table[class*="dark white"] tfoot tr {
+      background-color: #eaeaea; }
+      table[class*="dark white"] tfoot tr th:first-child {
+        border-radius: 0 0 0 .3rem; }
+      table[class*="dark white"] tfoot tr th:last-child {
+        border-radius: 0 0 .3rem 0; }
 
-.container {
-  margin: 0 1.2rem; }
+@media (max-width: 414px) {
+  table {
+    text-align: center; }
+    table[class*="screen"] thead tr {
+      display: block !important; }
+      table[class*="screen"] thead tr th {
+        width: 100% !important; }
+        table[class*="screen"] thead tr th:first-child {
+          border-radius: .3rem 0 0 0; }
+        table[class*="screen"] thead tr th::last-child {
+          border-radius: 0 .3rem 0 0; }
+    table[class*="screen"] tbody tr td {
+      width: auto !important;
+      display: block !important;
+      border-bottom-style: none; }
+      table[class*="screen"] tbody tr td:last-child {
+        border-bottom: 1px solid #ecf0f1; }
+    table[class*="screen"] tfoot tr th {
+      display: block !important; }
+      table[class*="screen"] tfoot tr th:first-child {
+        border-radius: 0 0 .3rem 0; }
+      table[class*="screen"] tfoot tr th::last-child {
+        border-radius: 0 0 0 .3rem; } }
 
-.em {
-  width: auto;
-  height: 5vh;
-  padding: 1vh 0;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 1rem;
-  background-color: #ced2d3;
-  -webkit-column-rule: 1px solid #39b54a; }
-  .em .column {
-    background-color: white;
-    height: 3vh; }
+.bar .item {
+  float: left; }
+
+.bar a {
+  text-decoration: none; }
 
 .fenestro,
 .window,

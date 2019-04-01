@@ -1,86 +1,219 @@
 // table style
 // https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-classes
-
-
-// border-size: .1rem;
-// border-color: #f0f0f0;
-// bg-table-column: #f9f9f9;
-// bg-table-header: #f0f0f0;
-// size-padding: .6rem .3rem;
-// font-szie: 1rem;
+// https://developer.mozilla.org/zh-CN/docs/Web/CSS/:nth-child
 
 table{
   width: 100%;
-  font-size: 1rem;
   text-align: left;
-  line-height: 1.8rem;
+  border-spacing: 0;
+  margin: .3rem auto;
+  font-size: .9rem;
+  line-height: 1.5rem;
   background-color: $true-white;
   border: .1rem solid $table-bd-color;
-  border-spacing: 0;
   border-radius: .3rem;
-  padding: .1rem;
-  color: $black;
-
+  padding: 0 1px 1px;
   thead{
     tr{
       th{
+        border-bottom: .1rem solid $table-bd-color;
         font-weight: 600;
-        background-color: $table-hd-color;
+      }
+    }
+  }
+  tbody{
+    tr{
+      td{border-bottom: 1px solid $table-bd-color;}
+    }
+  }
+  tfoot{
+    tr{
+      th{font-weight: 500;}
+    }
+  }
+  th,
+  td{padding: .6rem;}
 
-        &:first-child{border-radius: .25rem 0 0 0;}
-        &:last-child{border-radius: 0 .25rem 0 0;}
+  // defaulta bazo in width
+  &[class*="basis"]{
+    width: auto;
+  }
+
+  // ellasilo
+  &[class*="touch"]{
+    tbody{
+      tr:hover{
+        background-color: $table-row-color;
+      }
+    }
+  }
+  &[class*="ones"]{
+    td:hover{background-color: $table-row-color;}
+  }
+
+  // features
+  &[class*="cell"]{
+    th,
+    td{
+      border-left: 1px solid $table-bd-color;
+      &:first-child{
+        border-left-style: none;
+      }
+    }
+  }
+  &[class*="cell Y"]{
+    th,
+    td{
+      border-bottom-style: none;
+      border-left: 1px solid $table-bd-color;
+      &:first-child{
+        border-left-style: none !important;
+      }
+    }
+    thead{
+      tr{
+        th{border-bottom: .1rem solid $table-bd-color;}
+      }
+    }
+    tfoot{
+      tr{
+        th{border-top: 1px solid $table-bd-color;}
       }
     }
   }
 
-  tbody{
-    tr{
-      td{
-        border-bottom: .1rem solid $table-bd-color;
-      }
+  // color list.
+  $colorName: (
+    'red': $red,
+    'orange': $orange,
+    'yellow': $yellow,
+    'green': $green,
+    'cyan': $cyan,
+    'blue': $blue,
+    'purple': $purple,
+    'indigo': $indigo,
+    'pink': $pink,
+    'brown': $brown,
+    'black': $black,
+    'gray': $gray,
+    'white': $white,
+    );
 
-      // 隔行渐变
-      // https://developer.mozilla.org/zh-CN/docs/Web/CSS/:nth-child
-      &:nth-child(2n){
-        background-color: $table-row-color;
-        &:hover{
-          background-color: $table-row-color - 15%;
+  // color table
+  @mixin tbColor($c){
+    border-top-style: none;
+    thead{
+      tr{
+        color: $white;
+        background-color: #{$c};
+        th{
+          border-bottom-style: none;
+          &:first-child{border-radius: .3rem 0 0 0;}
+          &:last-child{border-radius: 0 .3rem 0 0;}
+        }
+      }
+    }
+    tbody{
+      tr{
+        &:hover{background-color: $gray - 15%;}
+        &:nth-child(2n){
+          background-color: $gray;
+          &:hover{background-color: $gray - 15%;}
+        }
+        td{
+          border-bottom-style: none;
+        }
+      }
+    }
+    tfoot{
+      tr{
+        th{border-top: 1px solid $gray;}
+      }
+    }
+  }
+
+  // dark color.
+  @mixin darkColor($c) {
+    padding: 0;
+    color: $white;
+    border-top-style: none;
+    thead{
+      tr{
+        th{
+          background-color: #{$c};
+          border-bottom-style: none;
+          &:first-child{border-radius: .3rem 0 0 0;}
+          &:last-child{border-radius: 0 .3rem 0 0;}
+        }
+      }
+    }
+    tbody{
+      tr{
+        background-color: #{$c - 15%};
+        &:hover{background-color: #{$c - 30%};}
+        td{
+          border-bottom-style: none;
+        }
+      }
+    }
+    tfoot{
+      tr{
+        background-color: #{$c - 15%};
+        th{
+          &:first-child{border-radius: 0 0 0 .3rem;}
+          &:last-child{border-radius: 0 0 .3rem 0;}
         }
       }
     }
   }
 
-  tfoot{
-    tr{
-      th{
-        font-weight: 500;
+  // each table color list(12').
+  @each $i,$c in $colorName {
+    &[class*="color #{$i}"]{@include tbColor($c)}
+    &[class*="dark #{$i}"]{@include darkColor($c)}
+  }
+
+  // table end.
+}
+
+// width: 800px;
+// @media (max-width: $screen-1024){}
+// width: 414px;
+@media (max-width: $screen-phone-max){
+  table{
+    text-align: center;
+    &[class*="screen"]{
+      thead{
+        tr{
+          display: block!important;
+          th{
+            width: 100%!important;
+            &:first-child{border-radius: .3rem 0 0 0;}
+            &:last-child{border-radius: 0 .3rem 0 0;}
+          }
+        }
       }
-    }
-  }
-
-  // hover, focus
-  & tr:hover{
-    background-color: $table-row-color - 15%;
-    &:focus{
-      background-color: $table-row-color - 30%;
-    }
-  }
-
-  // column
-  & td,
-  & th{
-    padding: .6rem .3rem;
-  }
-
-  // table class
-  &[class*="space-line"]{
-    white-space: nowrap;
-  }
-  &[class*="cell"]{
-    & td,
-    & th{
-      border-left: .1rem solid $table-bd-color;
-      &:first-child{border-left: none;}
+      tbody{
+        tr{
+          td{
+            width: auto!important;
+            display: block!important;
+            border-bottom-style: none;
+            &:last-child{
+              border-bottom: 1px solid $gray;
+            }
+          }
+        }
+      }
+      tfoot{
+        tr{
+          th{
+            display: block!important;
+            &:first-child{border-radius: 0 0 .3rem 0;}
+            &:last-child{border-radius: 0 0 0 .3rem;}
+          }
+        }
+      }
     }
   }
 }

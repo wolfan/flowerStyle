@@ -4,6 +4,7 @@
 .window,
 .modld,
 .bomb,
+.ups,
 .ska{
   top: 0;
   left: 0;
@@ -38,5 +39,8 @@
 
   &:target{
     display: flex;
+  }
+  &[class*="view"]{
+    &:target{display: flex;}
   }
 }

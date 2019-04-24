@@ -91,13 +91,19 @@ $purple: #5e00ff;
 $indigo: #4B0082;
 $pink: #f54291;
 $brown: #a86048;
-$black: #34495e;
+$dark: #34495e;
+$black: #303030;
 $white: #f9f9f9;
 $gray: #ecf0f1;
 
-$gold: 1;
-$silver: 1;
-$copper: 1;
+// 黄金（香槟金）白银（）铜（青铜）铁（黑铁）
+$gold: #ffd700;
+$gold-champagne: #d7ca99;
+$silver: #f0f5f5;
+$brass: 1;
+$bronze: 1;
+$iron: 1;
+$black-iron: 1;
 
 $font-color: #34495e;
 
@@ -106,7 +112,21 @@ $table-bd-color: #bdc3c7;
 $table-row-color: #ecf0f1;
 
 // color array.
-$colors: $red $orange $yellow $green $cyan $blue $purple $indigo $pink $brown $black $gray $white;
+$colorName: (
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'cyan': $cyan,
+  'blue': $blue,
+  'purple': $purple,
+  'indigo': $indigo,
+  'pink': $pink,
+  'brown': $brown,
+  'dark': $dark,
+  'white': $white,
+  'gray': $gray,
+);
 
 // language set.
 // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/

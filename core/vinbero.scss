@@ -4,7 +4,8 @@
 
 // lingvo
 @import "lang";
-@import "color";
+// 存在class冲突问题。
+// @import "color";
 
 // fondo
 @import "basis";
@@ -20,3 +21,5 @@
 // komplemento
 // @import "plugin";
 @import "bombo";
+
+// https://developer.mozilla.org/zh-CN/docs/Web/CSS/position#Sticky_positioning

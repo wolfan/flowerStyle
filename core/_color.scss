@@ -1,22 +1,26 @@
 // color's
-.red{}
-.orange{}
-.yellow{}
-.green{}
-.cyan{}
-.blue{}
-.purple{}
-.dian,
-.indigo{}
-.pink{}
-.tea,
-.brown{}
-.black{}
-.gray{}
-.white{}
+// function
+@mixin blColor($colorName) {
+  @if ($colorName == $gray) {
+    color: $dary;
+  } @else if($colorName == $white) {
+    color: $dary;
+  } @else{
+    color: $white;
+  }
+  background-color: #{$colorName};
+  &:hover{
+    background-color: #{$colorName - 15%};
+  }
+}
 
-.gold{}
+// each block color's.
+@each $i,$c in $colorName{
+  [class="#{$i}"] {@include blColor($c)}
+}
+
+.gold{@include blColor($gold + 3%)}
 .yin,
-.silver{}
+.silver{@include blColor($color-gray-1)}
 .tong,
-.copper{}
+.copper{@include blColor($true-orange + 30%)}

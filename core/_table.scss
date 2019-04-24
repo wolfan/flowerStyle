@@ -82,23 +82,6 @@ table{
     }
   }
 
-  // color list.
-  $colorName: (
-    'red': $red,
-    'orange': $orange,
-    'yellow': $yellow,
-    'green': $green,
-    'cyan': $cyan,
-    'blue': $blue,
-    'purple': $purple,
-    'indigo': $indigo,
-    'pink': $pink,
-    'brown': $brown,
-    'black': $black,
-    'gray': $gray,
-    'white': $white,
-    );
-
   // color table
   @mixin tbColor($c){
     border-top-style: none;
@@ -136,7 +119,7 @@ table{
   @mixin darkColor($c) {
     padding: 0;
     color: $white;
-    border-top-style: none;
+    border-style: none;
     thead{
       tr{
         th{

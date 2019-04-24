@@ -25,23 +25,34 @@
 <body>
   <div id="CinioKoloro" class="container">
 
-    <!-- karto -->
-    <div class="karto">
-      <a href="#colorHEX">
-        <div class="kol-nomo"></div>
-        <div class="kol-val">
-          <div id="hex"></div>
-          <div id="cmk"></div>
-          <div id="rgb"></div>
-        </div>
-      </a>
-    </div>
+    <!-- color content. -->
+    <div id="enhavo"></div>
+
+    <!-- all color navigado's -->
+    <div id="navigado"></div>
 
   </div>
 
   <script>
-    const datumaFonto= {}
-    const div='';
+    const datumaFonto= {
+      "靛青":{
+        "name": "靛青",
+        "dos": "用蓼蓝叶泡水调和与石灰沉淀所得的蓝色染料，呈深蓝绿色。",
+        "color": [
+          "23,124,176",
+          "85,44,12,1",
+          "#177cb0"
+        ]
+      }
+    }
+    const colorDiv= document.querySelector('#CinioKoloro');
+    const infoName= document.querySelector('#enhavo');
+
+    infoName.innerHTML= datumaFonto.靛青.name;
+
+    document.body.style.cssText= `background-color: #177cb0`;
+
+
   </script>
 </body>
 </html>

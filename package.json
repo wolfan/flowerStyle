@@ -1,0 +1,21 @@
+{
+  "name": "flowerStyle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass -w --output-style compressed core/grape.scss flower.min.css",
+    "run": "node-sass -w core/grape.scss flower.lab.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfan/flowerStyle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wolfan/flowerStyle/issues"
+  },
+  "homepage": "https://github.com/wolfan/flowerStyle#readme"
+}

@@ -1,0 +1,10 @@
+// divider
+
+.divider{
+  margin-top: 1px soild $gray;
+
+  // https://developer.mozilla.org/zh-CN/docs/Web/CSS/content
+  &[data-content]::after{
+    content: attr(data-content);
+  }
+}

@@ -1,11 +1,12 @@
 {
   "name": "flowerStyle",
   "version": "1.0.0",
-  "description": "",
+  "description": "Grape 0.0.1",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass -w --output-style compressed core/grape.scss flower.min.css",
-    "run": "node-sass -w core/grape.scss flower.lab.css"
+    "sail": "node-sass ./core/grape.scss ./grape.css --output-style expanded",
+    "fly": "node-sass ./core/grape.scss ./grape.css compressed",
+    "generi": "node --version"
   },
   "repository": {
     "type": "git",

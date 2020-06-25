@@ -1,0 +1,92 @@
+// Color's
+$baza-color: #381460;
+
+$red: #f43f3b;
+$orange: #ff9700;
+$yellow: #f0c000;
+$green: #39b54a;
+$cyan: #1cbbb4;
+$blue: #0078ff;
+$purple: #5e00ff;
+$indigo: #4B0082;
+$brown: #a86048;
+$pink: #f54291;
+
+$dark: #34495e;
+$black: #0a0a0a;
+$white: #f9f9f9;
+
+$gray: #bfc4c7;
+$gray-dark: #999999;
+$gray-light: #e3e6e8;
+
+$gold: #f6ac49;
+$goldU: #d3a86a;
+$goldN: #dcc284;
+$silver: #f0f5f5;
+$silverU: $silver + 15%;
+$silverN: $silver - 15%;
+$brass: #f0a848;
+
+
+// Designated
+$header: $black;
+$link: $black;
+
+$mark-color: $green;
+$code-color: $blue;
+
+// Color matrix
+// https://www.sasscss.com/documentation/at-rules/control/each
+$case-array: (
+  "primary": $baza-color,
+  "default": $gray,
+  "success": $green,
+  "warning": $red,
+  "danger": $pink,
+  "inverse": $dark,
+  "info": $orange,
+  "disabled": $gray-light
+)
+
+// Various style
+// https://designmodo.github.io/Flat-UI/
+// https://www.zcool.com.cn/article/ZNzc2OTI4.html
+$apple-red: #ff3b30;
+$apple-orange: #ff9500;
+$apple-yellow: #ffcc00;
+$apple-green: #4cd964;
+$apple-cyan: #5ac8fa;
+$apple-blue: #007aff;
+$apple-purple: #5856d6;
+$apple-pink: #ff3d55;
+$apple-black: #04040f;
+$apple-white: #fefefe;
+
+$true-red: #ff0000;
+$true-orange: #ffa500;
+$true-yellow: #ffff00;
+$true-green: #008000;
+$true-cyan: #00ffff;
+$true-blue: #0000ff;
+$true-purple: #800880;
+$true-indigo: #4b0082;
+$true-pink: #ff9ed1;
+$true-black: #000000;
+$true-gray: #808080;
+$true-white: #ffffff;
+
+$color-red: #e74c3c;
+$color-orange: #f39c12;
+$color-yellow: #f1c40f;
+$color-green: #2ecc71;
+$color-emerald: #1abc9c;
+$color-cyan: $color-emerald;
+$color-blue: #3498db;
+$color-purple: #8e44ad;
+$color-pink: $true-pink;
+$color-black: #2c3e50;
+$color-gray: #ecf0f1;
+$color-gray-1: #bdc3c7;
+$color-brown: #95a5a6;
+$color-white: $true-white;

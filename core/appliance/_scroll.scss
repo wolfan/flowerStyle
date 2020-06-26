@@ -1,0 +1,22 @@
+// Scroll-x achieve(2 options)
+
+.scroll-x{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .item{
+    display: inline-block;
+  }
+}
+
+// Option: 2
+// https://developer.mozilla.org/zh-CN/docs/Web/CSS/scroll-snap-type
+.snap{
+  overflow: auto; // 滚动时显示滚动条，平时隐藏。
+  scroll-snap-type: x mandatory;
+
+  .item{
+    scroll-snap-align: center;  // left, center, right
+  }
+}

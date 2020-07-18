@@ -1,7 +1,7 @@
 // font-family
 // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
 
-$lang-baza: 'system-ui', -apple-system, BlinkMacSystemFont, Oxygren, Cantarell, 'Roboto Mono', Roboto !default;
+$lang-baza: -apple-system, BlinkMacSystemFont, Oxygren, Cantarell, 'system-ui', 'Roboto Mono', Roboto !default;
 
 $lang-hans: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', $lang-baza!default;
 $lang-hant: 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei', $lang-baza!default;

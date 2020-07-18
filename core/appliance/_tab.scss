@@ -1,0 +1,70 @@
+// Pri not() apply.
+// https://developer.mozilla.org/zh-CN/docs/Web/CSS/:not
+// https://developer.mozilla.org/zh-CN/docs/Web/CSS/General_sibling_combinator
+
+/* 
+<div class="tabs">
+  <input type="radio" name="tab-nav" id="tab-1" hidden checked>
+  <label for="tab-1">tab-1</label>
+
+  <div class="tab-crad">
+    <div class="tab-item" data-tab="tab-1"></div>
+  </div>
+</div>
+*/
+
+//  test-value
+$blue: blue;
+$tab-name: Unu, du, Tri;
+
+// timepate, move to color & label.scss
+@mixin colors($colors){
+  @if $colors == white {$font-color: $black}@else{$font-color: $white}
+  color: $font-color;
+  background-color: $colors;
+}
+
+@mixin label-tag($color){
+  text-decoration: none;
+  font-size: .9rem;
+  line-height: .9rem + .6rem +.1rem;
+  padding: .3rem .6rem;
+  
+  @include colors($color)
+
+  &:focus,
+  &:hover{
+    @include colors-ex($color)
+  }
+}
+// end
+
+%label-checked{
+  font-weight: 600;
+}
+%tabs-display{
+  display: none;
+}
+
+.tabs{
+  label{
+    @include label-tag($white)
+  }
+
+  .tab-crad{
+    padding: .3rem;
+    .tab-item{}
+  }
+  
+  @each $id in $tab-name{
+    &#tab-#{$id}:checked ~ label[for="tab-#{$id}"]{
+      @extend %label-checked
+    }
+  }
+
+  @each $id in $tab-name{
+    &#tab-#{$id}:checked ~ .tab-crad > .tab-#{$id}:not([data-tab~="tab-#{$id}"]){
+      @extend %tabs-display
+    }
+  }
+}

@@ -98,3 +98,12 @@ $color-gray: #ecf0f1;
 $color-gray-1: #bdc3c7;
 $color-brown: #95a5a6;
 $color-white: $true-white;
+
+
+// text status color.
+// https://www.iviewui.com/components/font
+$text-title: $black;
+$text-content: $dark;
+$text-sub: lighted($dark, 12);
+$text-dis: $gray;
+$text-link: $blue;

@@ -1,1 +1,11 @@
 // Flex
+.flex-box{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  .column{
+    width: 100%;
+    flex: 12 12 100%;
+    align-self: baseline;
+  }
+}

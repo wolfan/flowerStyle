@@ -1,16 +1,31 @@
-// Grape 0.2 @ 2020-06-25
+// main dosiero.
+@import "./bazo";
+@import "./bazo/elemento";
+// @import "./funk/";
 
-@import "lupo";
-@import "koloro";
-@import "baza";
+// layout.
+@import "./arango/pago";
+@import "./arango/flex";
+@import "./arango/grid";
+@import "./arango/tablo";
+@import "./arango/butono";
+@import "./arango/formoj";
+@import "./arango/enigo";
 
-// element
-@import "basic/element";
-@import "basic/button";
-@import "basic/divider";
+// plugin
+@import "./plug/brilo";
+@import "./plug/koloroj";
+@import "./plug/dialog";
+@import "./plug/menuo";
+@import "./plug/navbar";
+@import "./plug/tabz";
+@import "./plug/label";
+@import "./plug/paneroj";
+@import "./plug/popup";
+@import "./plug/tipz";
+@import "./plug/divider";
 
-// layout
-@import "layout/flex";
-@import "layout/grid";
-
-// appliance
+// expand.
+@import "./expand/filtriloj";
+@import "./expand/kalendaro";
+@import "./expand/templinio";

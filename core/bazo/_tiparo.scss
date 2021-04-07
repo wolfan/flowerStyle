@@ -1,6 +1,6 @@
-// font-family
-// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+// pri font-family.
 
+// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
 $lang-baza: -apple-system, BlinkMacSystemFont, Oxygren, Cantarell, 'system-ui', 'Roboto Mono', Roboto !default;
 
 $lang-hans: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', $lang-baza!default;
@@ -10,4 +10,4 @@ $lang-korea: 'Malgun Gothic', $lang-baza!default;
 $lang-english: $lang-baza, 'Segoe UI', Menlo, Courier, monospace!default;
 
 // family style
-$Kai: KaiTi, SimKaiti, $lang-baza!default
+$Kai: KaiTi, SimKaiti, $lang-baza!default;

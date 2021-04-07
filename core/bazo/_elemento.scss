@@ -1,0 +1,101 @@
+// HTML typographic elements.
+*,
+::after,
+::before{
+  box-sizing: inherit;
+}
+
+html{}
+body{}
+
+a{
+  color: $lk;
+  text-decoration: none;
+  :focus,
+  :hover{
+    color: darken($lk, 18);
+    text-decoration: solid;
+  }
+  :active{}
+  :visited{}
+}
+label{}
+
+// Form class.
+button{}
+// https://developer.mozilla.org/zh-CN/docs/Web/CSS/Attribute_selectors
+input{
+  &[type=text]{}
+  &[type=password]{}
+  &[type=text]{}
+  &[type=search]{}
+  &[type=number]{}
+  &[type=email]{}
+  &[type=url]{}
+  // &[type=tel]{}
+  &[type=time]{}
+  &[type=date]{}
+  &[type=datetime-local]{}
+  &[type=month]{}
+  &[type=week]{}
+  &[type=range]{}
+  // from button
+  &[type=button]{}
+  &[type=radio]{
+    :hover{}
+  }
+  &[type=checkbox]{
+    :active{}
+  }
+}
+
+// Test label.
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{}
+
+p{}
+span{}
+
+b{}
+u,
+ins{}
+s,
+del{}
+i,
+em,
+var,
+cite{}
+
+sub{}
+sup{}
+blockquote{}
+
+// https://www.php.cn/css-tutorial-410902.html
+samp{}
+mark{}
+abbr[title]{}
+
+ruby{
+  rt{}
+}
+
+kbd{
+  &::before{
+    content: '';
+  }
+}
+time{
+  &::before{
+    content: '';
+  }
+}
+
+// list
+ul,
+ol{
+  li{}
+}
+
+dl{
+  dt{}
+  dd{}
+}

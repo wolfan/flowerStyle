@@ -1,59 +1,77 @@
-// Aldono al hue.
-$red: #f43f3b;
-$orange: #ff9700;
-$yellow: #f0c000;
-$green: #39b54a;
-$cyan: #1cbbb4;
-$blue: #0078ff;
-$purple: #5e00ff;
-$indigo: #4B0082;
-$brown: #a86048;
-$pink: #f54291;
+/* black, white, dark, gray */
+$black: #182434;
+$white: #f9fafc;
 
-$dark: #34495e;
-$black: #0a0a0a;
-$white: #f9f9f9;
+$dark: #2a374b;
+$dark-lg: #475669;
+$dark-lw: #8492a6;
+$dark-ls: #99a9bf;
 
-$gray: #bfc4c7;
-$gray-dark: #999999;
-$gray-light: #e3e6e8;
+$gray: #c0ccda;
+$gray-lg: #d3dce6;
+$gray-lw: #d3dce6;
+$gray-ls: #effef7;
 
-$gold: #f6ac49;
-$goldU: #d3a86a;
-$goldN: #dcc284;
-$silver: #f0f5f5;
-$silverU: $silver + 15%;
-$silverN: $silver - 15%;
-$brass: #f0a848;
+ /* rainbow */
+$red: #ff4757;
+$red-lg: #ff6b81;
+$orange: #ff6348;
+$orange-lg: #ff7f50;
+$yellow: #ffa502;
+$yellow-lg: #eccc68;
+$green: #2ed573;
+$green-lg: #7bed9f;
+$cyan: #1e90ff;
+$cyan-lg: #70a1ff;
+$blue: #3742fa;
+$blue-lg: #5352ed;
+$purple: #8c7ae6;
+$purple-lg: #9c88ff;
+$pink: #f368e0;
+$pink-lg: #ff9ff3;
+ 
+ /* rainbow-sup */
+$indigo: #82589F;
+$indigo-lg: #D6A2E8;
+$brown: #6F1E51;
+$brown-lg: #833471;
 
+ /* indicator color */
+$brand: #2aaeff;
+$positive: #1dbf71;
+$warning: #feb64e;
+$negative: #eb4d5c;
 
-// Designated
-$header: $black;
-$link: $black;
+// main color
+$main: #2f3542;
+$sec: $dark;
+$sup: $dark-lg;
+$inc: $dark-ls;
 
-$mark-color: $green;
-$code-color: $blue;
+$link: $blue;
+$hover: $blue-lg;
+
+$boder: $gray-lw;
+
+// Option: 2
+// @for $i from 1 to legth($case-key) +1 {}
+// https://segmentfault.com/q/1010000018728137
+// https://www.iviewui.com/components/font
 
 // Color matrix
 // Option: 1
 // @each $key, $value in $case-array
 // https://www.sasscss.com/documentation/at-rules/control/each
-$case-array: (
-  "primary": $baza-color,
-  "default": $gray,
-  "success": $green,
-  "warning": $red,
-  "danger": $pink,
-  "inverse": $dark,
-  "info": $orange,
-  "disabled": $gray-light
-);
-
-// Option: 2
-// @for $i from 1 to legth($case-key) +1 {}
-// https://segmentfault.com/q/1010000018728137
-$case-key: primary default success warning danger linverse info disbled;
-$case-color: $baza-color $gray $green $red $pink $dark $orange $gray-light;
+$hue-red: #f43f3b;
+$hue-orange: #ff9700;
+$hue-yellow: #f0c000;
+$hue-green: #39b54a;
+$hue-cyan: #1cbbb4;
+$hue-blue: #0078ff;
+$hue-purple: #5e00ff;
+$hue-indigo: #4B0082;
+$hue-brown: #a86048;
+$hue-pink: #f54291;
 
 // Various style
 // https://designmodo.github.io/Flat-UI/
@@ -97,20 +115,11 @@ $color-gray-1: #bdc3c7;
 $color-brown: #95a5a6;
 $color-white: $true-white;
 
-
-// text status color.
-// https://www.iviewui.com/components/font
-$text-title: $black;
-$text-content: $dark;
-$text-sub: lighted($dark, 12);
-$text-dis: $gray;
-$text-link: $blue;
-
 // kvin koloro list.
-$white-black-list: #fafafb #ccd0d4 #66717d #334151 #001226;
-$red-list: #fde3e3 #f78483 #e4100e #a40c0a #640706;
-$orange-list: #feebeb #fbb68f #f6610c #b74707 #762e04;
-$green: #e7f7e8 #8cda93 #36a93f #26762c #154219;
-$blue-list: #ecf5ff #66acfd #0366d8 #024695 #012752;
-$purple-list: #f6eefd #dbc0f9 #9544ed #7215d8 #520f9a;
-$pink: #fdeef4 #facfe2 #ed5497 #e51872 #a81253;
+// $white-black-list: #fafafb #ccd0d4 #66717d #334151 #001226;
+// $red-list: #fde3e3 #f78483 #e4100e #a40c0a #640706;
+// $orange-list: #feebeb #fbb68f #f6610c #b74707 #762e04;
+// $green: #e7f7e8 #8cda93 #36a93f #26762c #154219;
+// $blue-list: #ecf5ff #66acfd #0366d8 #024695 #012752;
+// $purple-list: #f6eefd #dbc0f9 #9544ed #7215d8 #520f9a;
+// $pink: #fdeef4 #facfe2 #ed5497 #e51872 #a81253;

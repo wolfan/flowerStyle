@@ -6,42 +6,78 @@
 }
 
 html{}
-body{}
+body{
+  margin: 0 auto;
+  color: $main;
+  font-size: $font;
+}
 
 a{
-  color: $lk;
   text-decoration: none;
+  color: $link;
   :focus,
   :hover{
-    color: darken($lk, 18);
     text-decoration: solid;
+    color: $hover;
   }
-  :active{}
-  :visited{}
+  // :active{}
+  :visited{
+    color: darken($link, 15%);
+  }
 }
-label{}
+// label,
+// a[class~=label],
+.label{
+  display: inline-block;
+  margin: .1rem auto;
+  padding: .1rem .6rem;
+  background-color: $gray-lw;
+  border-radius: .3rem;
+  color: $sec;
+  &:hover{
+    background-color: $gray;
+  }
+}
 
 // Form class.
-button{}
+button,
+.button{
+  appearance: none;
+  border-style: none;
+  background-color: transparent;
+
+  background-color: $gray-lw;
+  border: .1rem solid $gray;
+  color: $sec;
+  margin: .1rem auto;
+  padding: .3rem .6rem;
+  display: inline-block;
+  border-radius: .1rem;
+  &:hover{
+    background-color: $gray;
+  }
+}
+
 // https://developer.mozilla.org/zh-CN/docs/Web/CSS/Attribute_selectors
 input{
-  &[type=text]{}
-  &[type=password]{}
-  &[type=text]{}
-  &[type=search]{}
-  &[type=number]{}
-  &[type=email]{}
-  &[type=url]{}
+  // &[type=text]{}
+  // &[type=password]{}
+  // &[type=text]{}
+  // &[type=search]{}
+  // &[type=number]{}
+  // &[type=email]{}
+  // &[type=url]{}
   // &[type=tel]{}
-  &[type=time]{}
-  &[type=date]{}
-  &[type=datetime-local]{}
-  &[type=month]{}
-  &[type=week]{}
-  &[type=range]{}
+  // &[type=time]{}
+  // &[type=date]{}
+  // &[type=datetime-local]{}
+  // &[type=month]{}
+  // &[type=week]{}
+  // &[type=range]{}
   // from button
-  &[type=button]{}
-  &[type=radio]{
+  // &[type=button]{}
+  &[type=radio]:checked + label::before{
+    background-color: $red;
     :hover{}
   }
   &[type=checkbox]{
@@ -50,52 +86,111 @@ input{
 }
 
 // Test label.
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5{
+  margin: 0 0 .9rem;
+}
 
-p{}
-span{}
+h1, .h1{
+  font-size: 2.4rem;
+  line-height: 2.7rem;
+}
+h2, .h2{
+  font-size: 2.1rem;
+  line-height: 2.4rem;
+}
+h3, .h3{
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+}
+h4, .h4{
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+h5, .h5{
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
 
-b{}
-u,
-ins{}
-s,
-del{}
-i,
-em,
-var,
-cite{}
+p{
+  margin: 0 0 .9rem;
+}
+// span{}
 
-sub{}
-sup{}
-blockquote{}
+// b{}
+// u,
+// ins{}
+// s,
+// del{}
+// i,
+// em,
+// var,
+// cite{}
+
+// sub{}
+// sup{}
+// blockquote{}
 
 // https://www.php.cn/css-tutorial-410902.html
-samp{}
-mark{}
-abbr[title]{}
-
-ruby{
-  rt{}
-}
-
-kbd{
-  &::before{
-    content: '';
+// abbr[title]{}
+// samp{}
+mark{
+  border: .1rem solid $yellow;
+  background-color: $yellow-lg;
+  border-radius: .2rem;
+  padding: .1rem .3rem;
+  color: $dark-lg;
+  &:hover{
+    opacity: .9;
   }
 }
-time{
-  &::before{
-    content: '';
+code{
+  border: .1rem solid $black;
+  background-color: $dark;
+  border-radius: .2rem;
+  color: $white;
+  padding: .1rem .3rem;
+  font-family: $lang-baza;
+  &:hover{
+    opacity: .9;
   }
 }
+var{
+  border: .1rem solid $blue-lg;
+  background-color: $blue;
+  border-radius: .2rem;
+  padding: .1rem .3rem;
+  color: $white;
+  &:hover{
+    opacity: .9;
+  }
+}
+
+// ruby{
+//   rt{}
+// }
+
+// kbd{
+//   &::before{
+//     content: '';
+//   }
+// }
+// time{
+//   &::before{
+//     content: '';
+//   }
+// }
 
 // list
-ul,
-ol{
-  li{}
-}
+// ul,
+// ol{
+//   li{}
+// }
 
-dl{
-  dt{}
-  dd{}
-}
+// dl{
+//   dt{}
+//   dd{}
+// }

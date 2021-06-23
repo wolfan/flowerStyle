@@ -1,4 +1,55 @@
 // bazaj hue kaj valoro kaj tiparo.
 @import "./bazo/tiparo";
+@import "./bazo/hue";
 
-// https://www.iviewui.com/components/font
+// font-size.
+$font: .9rem;
+$line: 1.2rem;
+$h1: 2.4rem;
+$h2: 2.1rem;
+$h3: 1.8rem;
+$h4: 1.5rem;
+$h5: 1.2rem;
+
+// color.
+$rainbow: (
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "cyan": $cyan,
+  "blue": $blue,
+  "purple": $purple,
+  "pink": $pink,
+  "error": $red,
+);
+$rainbow-lg:  (
+  "red": $red-lg,
+  "orange": $orange-lg,
+  "yellow": $yellow-lg,
+  "green": $green-lg,
+  "cyan": $cyan-lg,
+  "blue": $blue-lg,
+  "purple": $purple-lg,
+  "pink": $pink-lg,
+  "error": $red-lg
+);
+
+@each $ky, $vl in $rainbow{
+  .#{$ky} {
+    color: $white!important;
+    background-color: #{$vl}!important;
+  }
+  .#{$ky}[class~=button],
+  button[class~=#{$ky}],
+  input[class~=#{$ky}]{
+    $bd-color: $vl;
+    border-color: darken($bd-color, 15%);
+  }
+}
+
+@each $ky, $vl in $rainbow-lg{
+  .#{$ky}:hover{
+    background-color: #{$vl}!important;
+  }
+}

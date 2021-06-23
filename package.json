@@ -4,9 +4,7 @@
   "description": "Grape 0.0.1",
   "main": "index.js",
   "scripts": {
-    "sail": "node-sass ./core/grape.scss ./grape.css --output-style expanded",
-    "fly": "node-sass ./core/grape.scss ./grape.css compressed",
-    "generi": "node --version"
+    "dome": "sass ./core/Grape.scsc ./d.css --watch"
   },
   "repository": {
     "type": "git",

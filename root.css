@@ -1,0 +1,64 @@
+:root{
+  --main: var(--black);  /* font-color, header */
+  --sec: var(--dark); /* selected */
+  --sup: var(--dark-lg); /* description */
+  --inc: var(--dark-ls); /* prohibit */
+  
+  /* description */
+  --link: var(--blue);
+  --hover: var(--blue-lg);
+  --boder: var(--gray-lw);
+
+  /* black, white, dark, gray */
+  --black: #182434;
+  --white: #f9fafc;
+
+  --dark: #2a374b;
+  --dark-lg: #475669;
+  --dark-lw: #8492a6;
+  --dark-ls: #99a9bf;
+
+  --gray: #c0ccda;
+  --gray-lg: #d3dce6;
+  --gray-lw: #d3dce6;
+  --gray-ls: #effef7;
+
+  /* rainbow */
+  --red: #ff4757;
+  --red-lg: #ff6b81;
+  --orange: #ff6348;
+  --orange-lg: #ff7f50;
+  --yellow: #ffa502;
+  --yellow-lg: #eccc68;
+  --green: #2ed573;
+  --green-lg: #7bed9f;
+  --cyan: #1e90ff;
+  --cyan-lg: #70a1ff;
+  --blue: #3742fa;
+  --blue-lg: #5352ed;
+  --purple: #8c7ae6;
+  --purple-lg: #9c88ff;
+  --pink: #f368e0;
+  --pink-lg: #ff9ff3;
+  
+  /* rainbow-sup */
+  --indigo: #82589F;
+  --indigo-lg: #D6A2E8;
+  --brown: #6F1E51;
+  --brown-lg: #833471;
+
+  /* indicator color */
+  --brand: #2aaeff;
+  --positive: #1dbf71;
+  --warning: #feb64e;
+  --negative: #eb4d5c;
+
+  /* size */
+  --h1: 2.4rem;
+  --h2: 2.1rem;
+  --h3: 1.8rem;
+  --h4: 1.5rem;
+  --h5: 1.2rem;
+  --bold: 600;
+  --medium: 500;
+}

@@ -1,0 +1,40 @@
+// form'z & input.
+input[type=text]{
+  appearance: none;
+  outline: transparent;
+  border-style: none;
+  border: 1px solid $boder;
+  padding: .3rem .6rem;
+  &:focus,
+  &:hover{
+    // border-color: darken($boder, 15%);
+    border-color: $dark-lw;
+  }
+}
+textarea{
+  appearance: none;
+  outline: transparent;
+  border-style: none;
+  border: 1px solid $boder;
+  padding: .3rem;
+  &:focus,
+  &:hover{
+    border-color: $dark-lw;
+  }
+}
+
+// form.
+.form-gp{
+  display: inline-grid;
+  & > label{
+    font-weight: 600;
+    margin: .6rem 0 .3rem;
+  }
+}
+
+// input size.
+input[class~=lg],
+input[class~=plena]{
+  width: 100%;
+}
+// input[class~=cram]{}

@@ -27,6 +27,7 @@ La nuna versio estas 0.1.2(r) Kodo 'Vinbero'.
 |           |   Dialog   | 对话、弹窗 |
 |           |  Divider   | 分隔线     |
 |       pop |  Popover   | 冒泡       |
+|        el |            | 选中       |
 
 _**Nivelo:** ujo > cap > ero > (ele,bl,ul+li)_
 
